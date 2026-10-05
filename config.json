@@ -1,6 +1,6 @@
 {
   "platform": "telegram",
-  "catalogMode": "curated",
+  "catalogMode": "verified_offer",
   "channel": {
     "name": "Respawn Ofertas",
     "visibility": "public",

@@ -2,7 +2,7 @@ import { channelTarget, channelUsername } from './core.mjs';
 
 export function createTelegram(config, token, fetchImpl = fetch) {
   if (!/^\d+:[a-zA-Z0-9_-]{20,}$/.test(token ?? '')) throw new Error('Configure TELEGRAM_BOT_TOKEN nos Secrets do GitHub; não coloque a chave em arquivos ou no chat.');
-  const allowed = new Set(['getMe', 'getChat', 'getChatMember', 'sendMessage', 'getUpdates']);
+  const allowed = new Set(['getMe', 'getChat', 'getChatMember', 'sendMessage', 'sendPhoto', 'getUpdates']);
   async function call(method, body) {
     if (!allowed.has(method)) throw new Error('Método Telegram não autorizado.');
     let response, data;
@@ -42,6 +42,12 @@ export function createTelegram(config, token, fetchImpl = fetch) {
       }
       // A saída é uma proposta de ID; nunca seleciona automaticamente o destino nem publica.
       return { bot: { id: bot.id, username: bot.username }, candidates: [...found.values()], requiresChannelConfirmation: true, published: false };
+    },
+    async sendPhoto(photo, caption) {
+      if (!Number.isSafeInteger(config.channel.id) || config.channel.id >= 0) throw new Error('Canal numérico ainda não conferido.');
+      const url = new URL(photo);
+      if (url.protocol !== 'https:' || url.username || url.password || [...caption].length > 1024) throw new Error('Foto ou legenda inválida.');
+      return call('sendPhoto', { chat_id: config.channel.id, photo, caption, allow_paid_broadcast: false });
     },
     async send(text) {
       if (!Number.isSafeInteger(config.channel.id) || config.channel.id >= 0) throw new Error('Canal numérico ainda não conferido.');

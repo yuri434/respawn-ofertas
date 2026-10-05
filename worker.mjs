@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
-import { validateCatalog, chooseNext, authorizeLive, publishOnce, curatedProductStatus } from './core.mjs';
+import { validateCatalog, chooseNext, authorizeLive, publishOnce, productStatus } from './core.mjs';
 import { createTelegram } from './telegram.mjs';
 
 const read = async path => JSON.parse((await fs.readFile(path, 'utf8')).replace(/^\uFEFF/, ''));
@@ -30,7 +30,7 @@ if (mode === 'check') {
     const selection = chooseNext(config, catalog, history);
     if (selection.blocked || !selection.product) { console.log(selection.reason ?? 'Fila concluída.'); break; }
     if (selection.product.retailer === 'Amazon' && !config.amazonChannelRegistered) throw new Error('Canal Telegram ainda precisa ser cadastrado nos Associados Amazon.');
-    const source = curatedProductStatus(config, selection.product);
+    const source = productStatus(config, selection.product);
     if (!source.ready) {
       history.items[selection.product.itemId] = { status: 'adiado', at: new Date().toISOString(), reason: source.reason };
       await persist();
