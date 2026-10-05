@@ -14,7 +14,7 @@ A conta Amazon mostra que ainda não tem aprovação para solicitar a Creators A
 
 Foto do produto exato, título, preço conferido e condições da compra, cupom somente quando válido para esse produto, link de afiliado completo, data da conferência e avisos de publicidade. Legenda de até 1.024 caracteres. Fotos exigem autorização que permita divulgação no Telegram. Não copiar fotos e cupons de outros canais como se fossem da sua conta.
 
-O módulo offers.mjs exige objeto offer com itemId do catálogo, verified=true, sourceUrl e checkedAt de até uma hora. image contém url HTTPS, itemId correspondente, checkedAt de até 24 horas, telegramUseAllowed=true e authorizationSourceUrl que documente a permissão. price exige currency=BRL, cents em centavos inteiros positivos, verified=true, conditions e sourceUrl. coupon pode ser null; se existir, precisa code, verified=true, sourceUrl, conditions, checkedAt de até uma hora e expiresAt futuro. São registros de conferência, não uma integração automática com as lojas. Não preencher confirmação, autorização ou data sem verificar a fonte real. Preços não são reduzidos automaticamente a partir do código de cupom.
+O módulo offers.mjs exige objeto offer com itemId do catálogo, verified=true, sourceUrl e checkedAt de até uma hora. image contém url HTTPS, itemId correspondente, checkedAt de até 24 horas, telegramUseAllowed=true e authorizationSourceUrl que documente a permissão. price exige currency=BRL, cents em centavos inteiros positivos, verified=true, conditions e sourceUrl. coupon pode ser null; se existir, precisa code, verified=true, sourceUrl, conditions, checkedAt de até uma hora e expiresAt futuro. Para Amazon, dataProvider exige Creators API, PA API ou Amazon Data Feed; preço copiado de página não atende essa validação. São registros de conferência, não uma integração automática com as lojas. Não preencher confirmação, autorização ou data sem verificar a fonte real. Preços não são reduzidos automaticamente a partir do código de cupom.
 
 Os 12 itens Amazon existentes não têm offer completo e permanecem pendentes. Os 54 candidatos Shopee ficam fora da fila ativa. As fixtures de testes usam example.com e valores sintéticos; nunca são copiadas ao catálogo real.
 
@@ -41,3 +41,4 @@ Conferir sem enviar: Actions → Respawn Ofertas no Telegram → Run workflow �
 - [Recursos de catálogo Amazon](https://associados.amazon.com.br/creatorsapi/docs/en-us/api-reference).
 - [Políticas de Associados Amazon](https://associados.amazon.com.br/help/operating/policies).
 - [Agendamento GitHub](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
+
