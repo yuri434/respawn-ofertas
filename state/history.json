@@ -26,7 +26,20 @@
       "messageId": 3,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/3"
+    },
+    "shopee:8746727497": {
+      "status": "publicado",
+      "at": "2026-10-05T23:06:50.047Z",
+      "confirmedAt": "2026-10-05T23:06:50.047Z",
+      "messageId": 5,
+      "url": "https://t.me/RespawnOfertasYuri/5",
+      "text": "🎮 Mouse Gamer Redragon Cobra M711 V3 — preto, RGB e USB\n\n💰 R$169,99 informado no portal de afiliados da Shopee. Confira o preço final, o frete e a disponibilidade no anúncio.\n\n👉 Comprar: https://s.shopee.com.br/AUuYI6FJg5\n\nConferido em 05/10/2026, 20:05. Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/AUuYI6FJg5",
+      "channelId": -1003910154291,
+      "format": "photo",
+      "publicationMode": "manual_reviewed_photo",
+      "evidence": "Mensagem com foto 800x800 e legenda visível no canal correto. Link obtido pelo comando Copy Message Link do Telegram."
     }
   },
-  "note": "Canal novo. O histórico de WhatsApp permanece separado; nenhuma publicação Telegram foi feita."
+  "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
 }
