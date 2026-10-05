@@ -13,8 +13,8 @@
   "timezone": "America/Sao_Paulo",
   "maxPerDay": 1,
   "maxCandidates": 3,
-  "cloudEnabled": false,
-  "botAccessApproved": false,
+  "cloudEnabled": true,
+  "botAccessApproved": true,
   "githubFreeQuotaConfirmed": true,
   "amazonChannelRegistered": true
 }
