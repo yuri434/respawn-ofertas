@@ -28,8 +28,8 @@
     "checkedOn": "2026-10-05",
     "usedBeforeTest": 0
   },
-  "cloudCheckRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37379408439",
-  "cloudCheckStatus": "success",
+  "cloudCheckRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37384513700",
+  "cloudCheckStatus": "success_20_tests_publication_disabled",
   "botAdminVerified": true,
   "botIdentityVerified": true,
   "botId": 8112013305,
@@ -46,7 +46,7 @@
   "publishTestRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37383416606",
   "publishTestStatus": "success_message_confirmed",
   "scheduleActive": false,
-  "pendingReason": "Amazon Creators API indisponível por conta não aprovada; mesma tela informa exigência de 10 vendas qualificadas em 30 dias para API de produtos. Pendentes imagens autorizadas, preços e cupons atuais e teste real de foto.",
+  "pendingReason": "Amazon: conta sem aprovação para Creators API, com requisito de 10 vendas qualificadas em 30 dias para API de produtos. Shopee: Open API indisponível, botão Aplicar desativado, acesso depende de suporte. Pendentes fonte autorizada de fotos, preços e cupons e teste real de foto.",
   "publicationUrl": "https://t.me/RespawnOfertasYuri/3",
   "remainingProducts": 11,
   "catalogMode": "verified_offer",
@@ -58,5 +58,6 @@
     "firstScheduledExecutionObserved": false,
     "verificationRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37383591655",
     "verificationStatus": "disabled_after_user_requested_photo"
-  }
+  },
+  "shopeeApiAccess": "unavailable_contact_support"
 }
