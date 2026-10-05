@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import { validateCatalog, chooseNext, publishOnce } from '../core.mjs';
+import { validateCatalog, chooseNext, publishOnce, curatedProductStatus } from '../core.mjs';
 import { createTelegram } from '../telegram.mjs';
 
 const read = async name => JSON.parse((await fs.readFile(new URL('../' + name, import.meta.url), 'utf8')).replace(/^\uFEFF/, ''));
@@ -28,6 +28,17 @@ test('Amazon bloqueada enquanto novo canal não for cadastrado', async () => {
   const c = live(); c.amazonChannelRegistered = false; let sends = 0;
   await assert.rejects(publishOnce({ config: c, catalog, history: { items: {} }, provider: provider(c, async () => sends++), persist: async () => {} }));
   assert.equal(sends, 0);
+});
+
+test('catálogo exige fonte, modelo e data válidos sem publicar preço ou desconto', async () => {
+  const c = live(), now = new Date('2026-10-05T12:00:00Z');
+  for (const p of catalog.products) assert.equal(curatedProductStatus(c, p, now).ready, true, p.title);
+  for (const change of [{ trackingVerified: false }, { checkedOn: '2026-08-01' }, { checkedOn: '2026-11-01' }, { sourceName: 'Outro produto' }, { text: catalog.products[0].text + '\nR$ 100' }]) {
+    const changed = structuredClone(catalog); Object.assign(changed.products[0], change); let sends = 0;
+    assert.equal(curatedProductStatus(c, changed.products[0], now).ready, false);
+    const result = await publishOnce({ config: c, catalog: changed, history: { items: {} }, provider: provider(c, async () => sends++), persist: async () => {}, now });
+    assert.equal(result.published, false); assert.equal(sends, 0);
+  }
 });
 test('dia local correto na virada de UTC', () => {
   assert.equal(chooseNext(base, catalog, { items: { a: { status: 'publicado', confirmedAt: '2026-10-05T00:30:00Z' } } }, new Date('2026-10-05T01:00:00Z')).blocked, true);
