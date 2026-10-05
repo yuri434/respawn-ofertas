@@ -1,12 +1,20 @@
 {
   "platform": "telegram",
-  "channel": { "name": "Respawn Ofertas", "visibility": "private", "url": null, "id": null },
-  "bot": { "id": null, "username": "RespawnOfertas_bot" },
+  "channel": {
+    "name": "Respawn Ofertas",
+    "visibility": "public",
+    "url": "https://t.me/RespawnOfertasYuri",
+    "id": -1003910154291
+  },
+  "bot": {
+    "id": 8112013305,
+    "username": "RespawnOfertas_bot"
+  },
   "timezone": "America/Sao_Paulo",
   "maxPerDay": 1,
   "maxCandidates": 3,
   "cloudEnabled": false,
   "botAccessApproved": false,
-  "githubFreeQuotaConfirmed": false,
-  "amazonChannelRegistered": false
+  "githubFreeQuotaConfirmed": true,
+  "amazonChannelRegistered": true
 }
