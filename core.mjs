@@ -5,6 +5,18 @@ export const amazonDisclosure = 'Como participante do Programa de Associados da 
 export const linkHash = value => createHash('sha256').update(value).digest('hex');
 export const localDay = value => new Intl.DateTimeFormat('sv-SE', { timeZone: 'America/Sao_Paulo' }).format(new Date(value));
 
+export function curatedProductStatus(config, product, now = new Date()) {
+  if (config.catalogMode !== 'curated') return { ready: false, reason: 'Modo de catálogo não configurado.' };
+  if (product.retailer !== 'Amazon' || product.trackingVerified !== true || product.linkSource !== 'SiteStripe da conta conectada' || product.mode !== 'Texto com link; sem preço, cupom ou desconto anunciado') return { ready: false, reason: 'Produto sem conferência original ou com formato não autorizado.' };
+  const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  if (!product.sourceName || !product.identityTokens?.length || !product.identityTokens.every(token => normalize(product.sourceName).includes(normalize(token)))) return { ready: false, reason: 'Identidade do modelo não corresponde à fonte conferida.' };
+  const checked = Date.parse(product.checkedOn + 'T00:00:00Z');
+  const age = new Date(now) - checked;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(product.checkedOn ?? '') || !Number.isFinite(checked) || new Date(checked).toISOString().slice(0, 10) !== product.checkedOn || age < 0 || age > 30 * 86400000) return { ready: false, reason: 'Conferência do catálogo vencida ou inválida; reconferir antes de publicar.' };
+  if (/R\$|\d\s*%/.test(product.text.replaceAll(product.offerLink, ''))) return { ready: false, reason: 'O catálogo de indicações não publica preço ou percentual de desconto.' };
+  return { ready: true, sourceMode: 'Catálogo conferido; sem consulta de preço, desconto ou estoque.' };
+}
+
 export function validateCatalog(config, catalog) {
   if (config.platform !== 'telegram' || config.timezone !== 'America/Sao_Paulo' || config.maxPerDay !== 1) throw new Error('Destino ou frequência inválidos.');
   const ids = new Set(), links = new Set();
@@ -67,6 +79,8 @@ export async function publishOnce({ config, catalog, history, provider, persist,
   if (selection.blocked || !selection.product) return { published: false, reason: selection.reason ?? 'Fila concluída.' };
   const p = selection.product;
   if (p.retailer === 'Amazon' && !config.amazonChannelRegistered) throw new Error('Cadastrar o canal Telegram na conta de Associados antes de divulgar Amazon.');
+  const source = curatedProductStatus(config, p, now);
+  if (!source.ready) return { published: false, reason: source.reason };
   await provider.verify();
   // Persistir na nuvem antes do envio: uma falha impede enviar, sem repetição automática.
   history.items[p.itemId] = { status: 'enviando', at: now.toISOString(), text: p.text, link: p.offerLink, channelId: config.channel.id };
