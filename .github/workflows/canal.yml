@@ -1,1 +1,51 @@
-
+name: Respawn Ofertas no Telegram
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Conferir ou publicar no canal
+        type: choice
+        options: [check, discover, verify, publish]
+        default: check
+# Agendamento será incluído somente após conferir a franquia gratuita e o teste real.
+concurrency:
+  group: achadinhos-telegram
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  canal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: node --test test/*.test.mjs
+      - run: node worker.mjs check
+      - name: Conferir ativação
+        id: mode
+        env:
+          EVENT: ${{ github.event_name }}
+          REQUESTED_MODE: ${{ inputs.mode }}
+        run: |
+          node --input-type=module -e "import fs from 'node:fs'; const c=JSON.parse(fs.readFileSync('config.json')); const enabled=c.cloudEnabled&&c.botAccessApproved&&c.githubFreeQuotaConfirmed; fs.appendFileSync(process.env.GITHUB_OUTPUT,'publish='+Boolean(enabled&&(process.env.EVENT==='schedule'||process.env.REQUESTED_MODE==='publish'))+'\n');"
+      - name: Conferir bot e canal sem publicar
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'verify'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: node worker.mjs verify
+      - name: Localizar ID do canal pela permissão do próprio bot
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'discover'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: node worker.mjs discover
+      - name: Publicar um item
+        if: steps.mode.outputs.publish == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          git config user.name 'Achadinhos Bot'
+          git config user.email 'achadinhos-bot@users.noreply.github.com'
+          node worker.mjs publish
