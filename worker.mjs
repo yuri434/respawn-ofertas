@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
-import { validateCatalog, chooseNext, authorizeLive, publishOnce } from './core.mjs';
+import { validateCatalog, chooseNext, authorizeLive, publishOnce, curatedProductStatus } from './core.mjs';
 import { createTelegram } from './telegram.mjs';
 
 const read = async path => JSON.parse((await fs.readFile(path, 'utf8')).replace(/^\uFEFF/, ''));
@@ -18,22 +18,8 @@ async function persist() {
   }
 }
 
-async function checkProduct(product) {
-  if (product.retailer !== 'Amazon') return true;
-  try {
-    const response = await fetch(product.productLink, { signal: AbortSignal.timeout(20000) });
-    if (!response.ok || !new URL(response.url).pathname.includes('/dp/' + product.asin)) return false;
-    const html = await response.text();
-    if (/captcha|robot check|automated access/i.test(html)) return false;
-    const title = html.match(/id=["']productTitle["'][^>]*>([\s\S]*?)<\/span>/i)?.[1]?.replace(/<[^>]+>/g, '').trim();
-    if (!title) return false;
-    const normalized = title.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
-    return product.identityTokens.every(token => normalized.includes(token.toLowerCase().replace(/[^a-z0-9]/g, '')));
-  } catch { return false; }
-}
-
 if (mode === 'check') {
-  console.log(JSON.stringify({ ...totals, platform: 'telegram', enabled: config.cloudEnabled, next: chooseNext(config, catalog, history).product?.title ?? null, livePublication: false }, null, 2));
+  console.log(JSON.stringify({ ...totals, platform: 'telegram', catalogMode: config.catalogMode, enabled: config.cloudEnabled, next: chooseNext(config, catalog, history).product?.title ?? null, livePublication: false }, null, 2));
 } else if (mode === 'verify') {
   console.log(JSON.stringify(await createTelegram(config, process.env.TELEGRAM_BOT_TOKEN).verify(), null, 2));
 } else if (mode === 'discover') {
@@ -44,9 +30,11 @@ if (mode === 'check') {
     const selection = chooseNext(config, catalog, history);
     if (selection.blocked || !selection.product) { console.log(selection.reason ?? 'Fila concluída.'); break; }
     if (selection.product.retailer === 'Amazon' && !config.amazonChannelRegistered) throw new Error('Canal Telegram ainda precisa ser cadastrado nos Associados Amazon.');
-    if (!await checkProduct(selection.product)) {
-      history.items[selection.product.itemId] = { status: 'adiado', at: new Date().toISOString(), reason: 'Anúncio não pôde ser reconferido; não há confirmação de oferta ativa.' };
+    const source = curatedProductStatus(config, selection.product);
+    if (!source.ready) {
+      history.items[selection.product.itemId] = { status: 'adiado', at: new Date().toISOString(), reason: source.reason };
       await persist();
+      console.log(JSON.stringify({ published: false, title: selection.product.title, reason: source.reason }));
       continue;
     }
     console.log(JSON.stringify(await publishOnce({ config, catalog, history, provider: createTelegram(config, process.env.TELEGRAM_BOT_TOKEN), persist })));
