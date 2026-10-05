@@ -1,8 +1,5 @@
 name: Respawn Ofertas no Telegram
 on:
-  schedule:
-    - cron: '17 19 * * *'
-      timezone: America/Sao_Paulo
   workflow_dispatch:
     inputs:
       mode:
