@@ -12,12 +12,12 @@ const now = new Date('2026-10-05T12:00:00Z');
 function fixture() {
   const config = { ...originalConfig, cloudEnabled: true, catalogMode: 'verified_offer' };
   const catalog = structuredClone(originalCatalog), product = catalog.products[0];
-  product.offer = { itemId: product.itemId, verified: true, sourceUrl: 'https://example.com/test-offer', checkedAt: now.toISOString(), image: { itemId: product.itemId, url: 'https://example.com/test-photo.jpg', checkedAt: now.toISOString(), telegramUseAllowed: true, authorizationSourceUrl: 'https://example.com/test-authorization' }, price: { currency: 'BRL', cents: 1, verified: true, conditions: 'Condição de teste, sem oferta real.', sourceUrl: 'https://example.com/test-offer' }, coupon: null };
+  product.offer = { dataProvider: 'Creators API', itemId: product.itemId, verified: true, sourceUrl: 'https://example.com/test-offer', checkedAt: now.toISOString(), image: { itemId: product.itemId, url: 'https://example.com/test-photo.jpg', checkedAt: now.toISOString(), telegramUseAllowed: true, authorizationSourceUrl: 'https://example.com/test-authorization' }, price: { currency: 'BRL', cents: 1, verified: true, conditions: 'Condição de teste, sem oferta real.', sourceUrl: 'https://example.com/test-offer' }, coupon: null };
   return { config, catalog, product };
 }
 
 test('sem foto, autorização, oferta recente ou cupom válido não envia', async () => {
-  for (const change of [p => { delete p.offer; }, p => { p.offer.image = null; }, p => { p.offer.image.telegramUseAllowed = false; }, p => { p.offer.image.itemId = 'other'; }, p => { p.offer.checkedAt = '2026-10-04T12:00:00Z'; }, p => { p.offer.price.verified = false; }, p => { p.offer.coupon = { code: 'TEST', verified: true, checkedAt: now.toISOString(), expiresAt: '2026-10-04T12:00:00Z', sourceUrl: 'https://example.com/test-coupon', conditions: 'Somente teste.' }; }]) {
+  for (const change of [p => { delete p.offer; }, p => { delete p.offer.dataProvider; }, p => { p.offer.image = null; }, p => { p.offer.image.telegramUseAllowed = false; }, p => { p.offer.image.itemId = 'other'; }, p => { p.offer.checkedAt = '2026-10-04T12:00:00Z'; }, p => { p.offer.price.verified = false; }, p => { p.offer.coupon = { code: 'TEST', verified: true, checkedAt: now.toISOString(), expiresAt: '2026-10-04T12:00:00Z', sourceUrl: 'https://example.com/test-coupon', conditions: 'Somente teste.' }; }]) {
     const { config, catalog, product } = fixture(); change(product); let sends = 0, verifies = 0;
     assert.equal(offerStatus(product, now).ready, false);
     const result = await publishOnce({ config, catalog, now, history: { items: {} }, persist: async () => {}, provider: { verify: async () => verifies++, sendPhoto: async () => sends++, send: async () => sends++ } });
@@ -49,3 +49,4 @@ test('sendPhoto usa só canal fixado, URL e legenda, sem transmissão paga', asy
   await api.sendPhoto(product.offer.image.url, offerCaption(product));
   assert.equal(calls[0].method, 'sendPhoto'); assert.equal(calls[0].body.chat_id, config.channel.id); assert.equal(calls[0].body.photo, product.offer.image.url); assert.equal(calls[0].body.allow_paid_broadcast, false);
 });
+
