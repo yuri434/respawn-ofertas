@@ -1,0 +1,22 @@
+{
+  "repositoryCreated": true,
+  "channelName": "Respawn Ofertas",
+  "platform": "telegram",
+  "candidateShopeeProducts": 54,
+  "stage": "awaiting_bot_admin_and_github_secret",
+  "whatsappSessionCreated": false,
+  "activeCatalogProducts": 12,
+  "cloudEnabled": false,
+  "postsPublished": 0,
+  "telegramTokenStored": false,
+  "whatsappAutomation": "PAUSED",
+  "tests": {
+    "passed": 15,
+    "liveIntegrationTested": false,
+    "failed": 0
+  },
+  "channelVisibility": "private",
+  "channelVerifiedInBrowser": true,
+  "botUsername": "RespawnOfertas_bot",
+  "repositoryUrl": "https://github.com/yuri434/respawn-ofertas"
+}

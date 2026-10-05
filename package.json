@@ -1,0 +1,14 @@
+{
+  "name": "achadinhos-telegram",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node worker.mjs check",
+    "verify": "node worker.mjs verify",
+    "discover": "node worker.mjs discover",
+    "publish": "node worker.mjs publish"
+  }
+}
