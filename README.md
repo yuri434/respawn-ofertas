@@ -8,7 +8,7 @@ A integração oficial Telegram funciona: o bot @RespawnOfertas_bot publicou um 
 
 Após o usuário pedir foto e cupom quando disponível, novas publicações foram bloqueadas (cloudEnabled=false) e o agendamento foi retirado. O modo atual é verified_offer: não publica texto como alternativa a uma foto ausente.
 
-A conta Amazon mostra que ainda não tem aprovação para solicitar a Creators API. A mesma tela informa exigência de 10 vendas qualificadas nos últimos 30 dias para a API de produtos. Portanto, não existe integração ativa para buscar fotos, preços ou cupons automaticamente. Não foram geradas credenciais. O canal foi salvo na lista de sites da Amazon; isso não significa aprovação final.
+A conta Amazon mostra que ainda não tem aprovação para solicitar a Creators API. A mesma tela informa exigência de 10 vendas qualificadas nos últimos 30 dias para a API de produtos. Portanto, não existe integração ativa para buscar fotos, preços ou cupons automaticamente. Não foram geradas credenciais. O portal Shopee também informou que a conta não tem acesso à Open API; Aplicar está desativado e a página pede contato com o suporte. Não foram lidas ou criadas chaves Shopee. O canal foi salvo na lista de sites da Amazon; isso não significa aprovação final.
 
 ## Formato preparado
 
@@ -24,7 +24,7 @@ O Secret TELEGRAM_BOT_TOKEN foi preenchido diretamente pelo usuário no GitHub; 
 
 Reserva e persiste o histórico antes do envio, exige confirmação de foto, legenda e canal, e bloqueia repetição após resposta ambígua. Manter state/history.json. Não executar cópias com históricos independentes. Sem foto, fonte atual ou cupom válido, adia o produto.
 
-20 testes locais passaram, incluindo foto ausente, autorização ausente, produto diferente, preço e cupom vencidos, legenda longa, confirmação da foto e preservação do link. O teste de foto em produção continua pendente por falta de material e fonte autorizados.
+20 testes passaram localmente e no GitHub (https://github.com/yuri434/respawn-ofertas/actions/runs/37384513700), incluindo foto ausente, autorização ausente, produto diferente, preço e cupom vencidos, legenda longa, confirmação da foto e preservação do link. O teste de foto em produção continua pendente por falta de material e fonte autorizados.
 
 ## Próxima ativação
 
@@ -41,4 +41,5 @@ Conferir sem enviar: Actions → Respawn Ofertas no Telegram → Run workflow �
 - [Recursos de catálogo Amazon](https://associados.amazon.com.br/creatorsapi/docs/en-us/api-reference).
 - [Políticas de Associados Amazon](https://associados.amazon.com.br/help/operating/policies).
 - [Agendamento GitHub](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
+
 
