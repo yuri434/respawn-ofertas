@@ -10,6 +10,11 @@
       "status": "adiado",
       "at": "2026-10-05T22:26:01.286Z",
       "reason": "Anúncio não pôde ser reconferido; não há confirmação de oferta ativa."
+    },
+    "amazon:B097K3WV9J": {
+      "status": "adiado",
+      "at": "2026-10-05T22:26:02.597Z",
+      "reason": "Anúncio não pôde ser reconferido; não há confirmação de oferta ativa."
     }
   },
   "note": "Canal novo. O histórico de WhatsApp permanece separado; nenhuma publicação Telegram foi feita."
