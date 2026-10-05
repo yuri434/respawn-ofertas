@@ -3,11 +3,11 @@
   "channelName": "Respawn Ofertas",
   "platform": "telegram",
   "candidateShopeeProducts": 54,
-  "stage": "photo_offer_prepared_source_blocked",
+  "stage": "manual_photo_published_official_api_pending",
   "whatsappSessionCreated": false,
   "activeCatalogProducts": 12,
   "cloudEnabled": false,
-  "postsPublished": 1,
+  "postsPublished": 2,
   "telegramTokenStored": true,
   "whatsappAutomation": "PAUSED",
   "tests": {
@@ -46,7 +46,7 @@
   "publishTestRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37383416606",
   "publishTestStatus": "success_message_confirmed",
   "scheduleActive": false,
-  "pendingReason": "Amazon: conta sem aprovação para Creators API, com requisito de 10 vendas qualificadas em 30 dias para API de produtos. Shopee: Open API indisponível, botão Aplicar desativado, acesso depende de suporte. Pendentes fonte autorizada de fotos, preços e cupons e teste real de foto.",
+  "pendingReason": "APIs oficiais das lojas ainda indisponíveis. Conferência manual autorizada; oferta Shopee com foto publicada. Busca automática e teste de foto pelo bot em nuvem permanecem pendentes.",
   "publicationUrl": "https://t.me/RespawnOfertasYuri/3",
   "remainingProducts": 11,
   "catalogMode": "verified_offer",
@@ -59,5 +59,8 @@
     "verificationRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37383591655",
     "verificationStatus": "disabled_after_user_requested_photo"
   },
-  "shopeeApiAccess": "unavailable_contact_support"
+  "shopeeApiAccess": "unavailable_contact_support",
+  "manualPhotoPublished": true,
+  "manualPhotoPublicationUrl": "https://t.me/RespawnOfertasYuri/5",
+  "automaticDiscoveryActive": false
 }

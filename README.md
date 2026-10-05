@@ -8,6 +8,8 @@ A integração oficial Telegram funciona: o bot @RespawnOfertas_bot publicou um 
 
 Após o usuário pedir foto e cupom quando disponível, novas publicações foram bloqueadas (cloudEnabled=false) e o agendamento foi retirado. O modo atual é verified_offer: não publica texto como alternativa a uma foto ausente.
 
+O usuário autorizou a conferência manual enquanto aguarda as APIs. Em 05/10 às 20:06, foi publicado pelo Telegram Web o Redragon Cobra M711 V3 com foto exata de 800×800 fornecida pelo portal de afiliados Shopee, preço informado de R$169,99 e o link gerado na conta: https://t.me/RespawnOfertasYuri/5. O cupom foi omitido porque a página da loja bloqueou sua verificação. A mensagem e a foto foram conferidas no próprio canal, e o histórico foi sincronizado no GitHub. Essa publicação manual adicional demonstra o formato; não altera o limite diário do bot nem ativa agendamento. O registro da fonte está em oferta-manual-redragon.json.
+
 A conta Amazon mostra que ainda não tem aprovação para solicitar a Creators API. A mesma tela informa exigência de 10 vendas qualificadas nos últimos 30 dias para a API de produtos. Portanto, não existe integração ativa para buscar fotos, preços ou cupons automaticamente. Não foram geradas credenciais. O portal Shopee também informou que a conta não tem acesso à Open API; Aplicar está desativado e a página pede contato com o suporte. Não foram lidas ou criadas chaves Shopee. O canal foi salvo na lista de sites da Amazon; isso não significa aprovação final.
 
 ## Formato preparado
@@ -24,7 +26,7 @@ O Secret TELEGRAM_BOT_TOKEN foi preenchido diretamente pelo usuário no GitHub; 
 
 Reserva e persiste o histórico antes do envio, exige confirmação de foto, legenda e canal, e bloqueia repetição após resposta ambígua. Manter state/history.json. Não executar cópias com históricos independentes. Sem foto, fonte atual ou cupom válido, adia o produto.
 
-20 testes passaram localmente e no GitHub (https://github.com/yuri434/respawn-ofertas/actions/runs/37384513700), incluindo foto ausente, autorização ausente, produto diferente, preço e cupom vencidos, legenda longa, confirmação da foto e preservação do link. O teste de foto em produção continua pendente por falta de material e fonte autorizados.
+20 testes passaram localmente e no GitHub (https://github.com/yuri434/respawn-ofertas/actions/runs/37384513700), incluindo foto ausente, autorização ausente, produto diferente, preço e cupom vencidos, legenda longa, confirmação da foto e preservação do link. A publicação manual com foto foi confirmada; o envio real de foto pelo bot em nuvem ainda precisa ser testado quando houver uma fonte ativa.
 
 ## Próxima ativação
 
