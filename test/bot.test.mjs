@@ -18,9 +18,11 @@ test('links inteiros de afiliado preservados e sem duplicatas', () => {
   assert.throws(() => validateCatalog(base, changed));
 });
 test('publicação permanece desativada até configurar', async () => {
-  let sends = 0;
-  await assert.rejects(publishOnce({ config: base, catalog, history: { items: {} }, provider: provider(base, async () => sends++), persist: async () => {} }));
-  assert.equal(sends, 0);
+  for (const gate of ['cloudEnabled', 'botAccessApproved', 'githubFreeQuotaConfirmed']) {
+    const c = live(); c[gate] = false; let sends = 0;
+    await assert.rejects(publishOnce({ config: c, catalog, history: { items: {} }, provider: provider(c, async () => sends++), persist: async () => {} }));
+    assert.equal(sends, 0, gate + ' precisa impedir envio');
+  }
 });
 test('Amazon bloqueada enquanto novo canal não for cadastrado', async () => {
   const c = live(); c.amazonChannelRegistered = false; let sends = 0;
