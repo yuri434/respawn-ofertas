@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import { validateCatalog, chooseNext, publishOnce, curatedProductStatus } from '../core.mjs';
+import { validateCatalog, chooseNext, publishOnce as publishCore, curatedProductStatus } from '../core.mjs';
 import { createTelegram } from '../telegram.mjs';
 
 const read = async name => JSON.parse((await fs.readFile(new URL('../' + name, import.meta.url), 'utf8')).replace(/^\uFEFF/, ''));
@@ -10,6 +10,7 @@ const live = () => ({ ...structuredClone(base), catalogMode: 'curated', cloudEna
 const receipt = (c, text) => ({ message_id: 123, chat: { type: 'channel', id: c.channel.id }, text });
 const provider = (c, send) => ({ verify: async () => {}, send: send ?? (async text => receipt(c, text)) });
 const token = '123456789:UNIT_TEST_TOKEN_NO_REAL_CREDENTIAL';
+const publishOnce = args => publishCore({ ...args, now: args.now ?? new Date('2026-10-05T12:00:00Z') });
 
 test('links inteiros de afiliado preservados e sem duplicatas', () => {
   assert.equal(validateCatalog(base, catalog).amazon, 12);
