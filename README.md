@@ -1,49 +1,28 @@
-# Respawn Ofertas — foto, preço e cupom
+# Respawn Ofertas
 
-**Atualização de 06/10:** API Shopee ativada no portal com autorização do usuário; AppID e Senha gerados, sem leitura ou cópia de seus valores. Integração implementada e 28 testes locais aprovados. Uso real da API ainda depende de o usuário cadastrar os dois Secrets e de executar `api_check`. Consulte [API-SHOPEE.md](API-SHOPEE.md). Até lá, a fila autorizada usa `curated_photo`, `catalogo-fotos.json`, um post por dia às 19:17 de São Paulo. Próxima execução esperada após implantação: 07/10. Consulte [ROTINA-AUTOMATICA.md](ROTINA-AUTOMATICA.md). As seções abaixo são histórico de 05/10 e não representam a liberação atual da API Shopee.
+Atualizado em 06/10/2026. O bot consulta a API oficial Shopee e publica no Telegram uma vez por dia, às 19:17 em America/Sao_Paulo, pelo GitHub Actions. O PC pode ficar desligado. Próxima execução esperada: 07/10/2026; agendamentos do GitHub podem atrasar e a primeira execução pelo cron ainda não foi observada.
 
-Canal público autorizado: https://t.me/RespawnOfertasYuri. Repositório privado: https://github.com/yuri434/respawn-ofertas.
+## Conteúdo automático
 
-## Estado em 05/10/2026
+Buscas alternadas em 30 categorias: processadores Ryzen/Intel, placas de vídeo, DDR4/DDR5, SSDs, placas-mãe, fontes, gabinetes, coolers, mouse, teclado, mousepad, headset, microfone, controles, monitores, cadeiras, PCs, notebooks, celulares, consoles e jogos de PS5/Xbox/Switch.
 
-A integração oficial Telegram funciona: o bot @RespawnOfertas_bot publicou um teste de texto com Kingston DDR5 16 GB, https://t.me/RespawnOfertasYuri/3. A API e a página pública confirmaram a mensagem. O histórico foi preservado.
+Cada publicação usa o nome, foto e preço retornados pela API, com o link de afiliado original para PC/celular e identificação publicitária. Preço mínimo é identificado como mínimo quando há variantes. Frete, preço final e disponibilidade podem mudar. Não fabrica link separado para aplicativo, descontos, cupons, benchmarks ou compatibilidade. A consulta usada não fornece campo de cupom.
 
-Após o usuário pedir foto e cupom quando disponível, novas publicações foram bloqueadas (cloudEnabled=false) e o agendamento foi retirado. O modo atual é verified_offer: não publica texto como alternativa a uma foto ausente.
+Exige nota mínima 4,5, dez vendas e loja oficial/preferida segundo shopType 1/2/4 da Shopee. Rejeita itens usados, recondicionados, quebrados e resultados incompatíveis com a categoria. Avaliações e vendas não comprovam desempenho, autenticidade ou bom custo-benefício: nenhum PC ou notebook é anunciado como capaz de rodar determinado jogo sem verificação específica.
 
-O usuário autorizou a conferência manual enquanto aguarda as APIs. Em 05/10 às 20:06, foi publicado pelo Telegram Web o Redragon Cobra M711 V3 com foto exata de 800×800 fornecida pelo portal de afiliados Shopee, preço informado de R$169,99 e o link gerado na conta: https://t.me/RespawnOfertasYuri/5. O cupom foi omitido porque a página da loja bloqueou sua verificação. A mensagem e a foto foram conferidas no próprio canal, e o histórico foi sincronizado no GitHub. Essa publicação manual adicional demonstra o formato; não altera o limite diário do bot nem ativa agendamento. O registro da fonte está em oferta-manual-redragon.json.
+## Validação e histórico
 
-A conta Amazon mostra que ainda não tem aprovação para solicitar a Creators API. A mesma tela informa exigência de 10 vendas qualificadas nos últimos 30 dias para a API de produtos. Portanto, não existe integração ativa para buscar fotos, preços ou cupons automaticamente. Não foram geradas credenciais. O portal Shopee também informou que a conta não tem acesso à Open API; Aplicar está desativado e a página pede contato com o suporte. Não foram lidas ou criadas chaves Shopee. O canal foi salvo na lista de sites da Amazon; isso não significa aprovação final.
+28 testes passaram na nuvem. A consulta real autenticada retornou três produtos completos com fotos, preços e links, sem publicar: [execução #18](https://github.com/yuri434/respawn-ofertas/actions/runs/37541513543).
 
-## Formato preparado
+A primeira foto publicada pelo bot na nuvem foi o [mouse Uniwity](https://t.me/RespawnOfertasYuri/6), em 06/10 às 19:26. Veio da fila anterior, sem preço. A primeira publicação com preço da API aguarda a execução diária seguinte. Três publicações reais constam no histórico; não são reenviadas.
 
-Foto do produto exato, título, preço conferido e condições da compra, cupom somente quando válido para esse produto, link de afiliado completo, data da conferência e avisos de publicidade. Legenda de até 1.024 caracteres. Fotos exigem autorização que permita divulgação no Telegram. Não copiar fotos e cupons de outros canais como se fossem da sua conta.
+O bot fixa sua identidade e o canal -1003910154291, verifica autorização, persiste uma reserva antes de enviar e confirma foto/legenda após a resposta. Resposta ambígua bloqueia novos envios até conferência. Limite de uma publicação por dia e intervalo mínimo de quatro horas. A fila anterior de fotos fica inativa enquanto a API estiver habilitada. Amazon continua pendente; esta descoberta automática usa Shopee.
 
-O módulo offers.mjs exige objeto offer com itemId do catálogo, verified=true, sourceUrl e checkedAt de até uma hora. image contém url HTTPS, itemId correspondente, checkedAt de até 24 horas, telegramUseAllowed=true e authorizationSourceUrl que documente a permissão. price exige currency=BRL, cents em centavos inteiros positivos, verified=true, conditions e sourceUrl. coupon pode ser null; se existir, precisa code, verified=true, sourceUrl, conditions, checkedAt de até uma hora e expiresAt futuro. Para Amazon, dataProvider exige Creators API, PA API ou Amazon Data Feed; preço copiado de página não atende essa validação. São registros de conferência, não uma integração automática com as lojas. Não preencher confirmação, autorização ou data sem verificar a fonte real. Preços não são reduzidos automaticamente a partir do código de cupom.
+## Operação
 
-Os 12 itens Amazon existentes não têm offer completo e permanecem pendentes. Os 54 candidatos Shopee ficam fora da fila ativa. As fixtures de testes usam example.com e valores sintéticos; nunca são copiadas ao catálogo real.
+- GitHub Secrets: TELEGRAM_BOT_TOKEN, SHOPEE_APP_ID e SHOPEE_API_SECRET, cadastrados pessoalmente pelo usuário; nenhum valor foi lido ou incluído no repositório.
+- Em Actions, `api_check` consulta ofertas sem publicar; `verify` confere bot e canal; `check` verifica a configuração e o limite diário.
+- Para pausar: cloudEnabled=false em config.json. Preserve state/history.json.
+- Não usa sessões de WhatsApp nem lê conversas pessoais.
 
-## Privacidade e confiabilidade
-
-O Secret TELEGRAM_BOT_TOKEN foi preenchido diretamente pelo usuário no GitHub; o valor não foi lido nem salvo no projeto. O bot usa somente a API oficial, com o bot 8112013305 e canal -1003910154291 fixados. Não usa sessão ou senha da conta pessoal. A rotina WhatsApp continua pausada.
-
-Reserva e persiste o histórico antes do envio, exige confirmação de foto, legenda e canal, e bloqueia repetição após resposta ambígua. Manter state/history.json. Não executar cópias com históricos independentes. Sem foto, fonte atual ou cupom válido, adia o produto.
-
-20 testes passaram localmente e no GitHub (https://github.com/yuri434/respawn-ofertas/actions/runs/37384513700), incluindo foto ausente, autorização ausente, produto diferente, preço e cupom vencidos, legenda longa, confirmação da foto e preservação do link. A publicação manual com foto foi confirmada; o envio real de foto pelo bot em nuvem ainda precisa ser testado quando houver uma fonte ativa.
-
-## Próxima ativação
-
-Conectar uma fonte autorizada de imagens e condições das lojas, obter uma oferta real completa, publicar um teste e conferir o próprio canal. Só depois reativar cloudEnabled e o cron diário 17 19 * * * com timezone America/Sao_Paulo. O GitHub executará com o PC desligado, mas pode atrasar ou perder execuções. Atualmente não há agendamento ativo.
-
-GitHub Free foi conferido: 2.000 minutos mensais compartilhados, orçamento Actions zero dólares com Stop usage ligado. Execuções manuais podem consumir a franquia. O job tem limite de cinco minutos.
-
-Conferir sem enviar: Actions → Respawn Ofertas no Telegram → Run workflow → check. O modo verify confere bot e canal; publish fica bloqueado pela configuração atual.
-
-## Fontes
-
-- [Telegram sendPhoto](https://core.telegram.org/bots/api#sendphoto).
-- [Creators API da própria conta](https://associados.amazon.com.br/creatorsapi).
-- [Recursos de catálogo Amazon](https://associados.amazon.com.br/creatorsapi/docs/en-us/api-reference).
-- [Políticas de Associados Amazon](https://associados.amazon.com.br/help/operating/policies).
-- [Agendamento GitHub](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
-
-
+[Canal](https://t.me/RespawnOfertasYuri) · [Execuções](https://github.com/yuri434/respawn-ofertas/actions/workflows/canal.yml) · [API Shopee](API-SHOPEE.md) · [Rotina](ROTINA-AUTOMATICA.md)

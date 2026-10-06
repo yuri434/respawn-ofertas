@@ -3,9 +3,9 @@
   "channelName": "Respawn Ofertas",
   "platform": "telegram",
   "candidateShopeeProducts": 54,
-  "stage": "curated_photo_active_shopee_api_credentials_pending",
+  "stage": "shopee_api_active",
   "whatsappSessionCreated": false,
-  "activeCatalogProducts": 4,
+  "activeCatalogProducts": null,
   "cloudEnabled": true,
   "postsPublished": 3,
   "telegramTokenStored": true,
@@ -14,7 +14,8 @@
     "passed": 28,
     "liveIntegrationTested": true,
     "failed": 0,
-    "photoProductionTested": true
+    "photoProductionTested": true,
+    "apiPricedPhotoProductionTested": false
   },
   "channelVisibility": "public",
   "channelVerifiedInBrowser": true,
@@ -46,10 +47,10 @@
   "publishTestRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37540529444",
   "publishTestStatus": "success_photo_caption_channel_and_history_confirmed",
   "scheduleActive": true,
-  "pendingReason": "API ativada; usuário precisa cadastrar Secrets para testar descoberta oficial.",
+  "pendingReason": "Primeira publicação com preço da API aguarda execução diária de 07/10 às 19:17 (São Paulo).",
   "publicationUrl": "https://t.me/RespawnOfertasYuri/6",
-  "remainingProducts": 3,
-  "catalogMode": "curated_photo",
+  "remainingProducts": null,
+  "catalogMode": "shopee_api",
   "catalogValidityDays": null,
   "schedule": {
     "cron": "17 19 * * *",
@@ -62,7 +63,12 @@
   "shopeeApiAccess": "activated_credentials_generated_2026-10-06",
   "manualPhotoPublished": true,
   "manualPhotoPublicationUrl": "https://t.me/RespawnOfertasYuri/5",
-  "automaticDiscoveryActive": false,
-  "queuedProducts": 3,
-  "amazonProductsPending": 11
+  "automaticDiscoveryActive": true,
+  "queuedProducts": 0,
+  "amazonProductsPending": 11,
+  "inactiveCuratedQueueProducts": 3,
+  "shopeeCredentialsStored": true,
+  "apiCheckRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37541513543",
+  "apiCheckStatus": "success_official_products_prices_and_photos",
+  "apiCheckProducts": 3
 }

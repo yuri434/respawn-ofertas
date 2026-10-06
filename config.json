@@ -19,5 +19,9 @@
   "githubFreeQuotaConfirmed": true,
   "amazonChannelRegistered": true,
   "catalogFile": "catalogo-fotos.json",
-  "shopeeApi": { "enabled": false, "credentialsLocation": "GitHub Actions Secrets", "requiresLiveCheck": true }
+  "shopeeApi": {
+    "enabled": true,
+    "credentialsLocation": "GitHub Actions Secrets",
+    "requiresLiveCheck": true
+  }
 }
