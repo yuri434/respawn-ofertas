@@ -3,18 +3,18 @@
   "channelName": "Respawn Ofertas",
   "platform": "telegram",
   "candidateShopeeProducts": 54,
-  "stage": "curated_photo_cloud_activation_prepared",
+  "stage": "curated_photo_active_shopee_api_credentials_pending",
   "whatsappSessionCreated": false,
   "activeCatalogProducts": 4,
   "cloudEnabled": true,
-  "postsPublished": 2,
+  "postsPublished": 3,
   "telegramTokenStored": true,
   "whatsappAutomation": "PAUSED",
   "tests": {
     "passed": 28,
     "liveIntegrationTested": true,
     "failed": 0,
-    "photoProductionTested": false
+    "photoProductionTested": true
   },
   "channelVisibility": "public",
   "channelVerifiedInBrowser": true,
@@ -28,8 +28,8 @@
     "checkedOn": "2026-10-05",
     "usedBeforeTest": 0
   },
-  "cloudCheckRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37384513700",
-  "cloudCheckStatus": "success_20_tests_publication_disabled",
+  "cloudCheckRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37540404318",
+  "cloudCheckStatus": "success_28_tests_queue_and_telegram_verified",
   "botAdminVerified": true,
   "botIdentityVerified": true,
   "botId": 8112013305,
@@ -41,14 +41,14 @@
   "channelUrl": "https://t.me/RespawnOfertasYuri",
   "amazonChannelRegistered": true,
   "amazonDestinationSaved": true,
-  "verifyRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37382021473",
+  "verifyRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37540404318",
   "verifyStatus": "success",
-  "publishTestRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37383416606",
-  "publishTestStatus": "success_message_confirmed",
+  "publishTestRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37540529444",
+  "publishTestStatus": "success_photo_caption_channel_and_history_confirmed",
   "scheduleActive": true,
-  "pendingReason": "API Shopee liberada; Secrets e teste real pendentes. Fila com fotos pronta para implantação.",
-  "publicationUrl": "https://t.me/RespawnOfertasYuri/3",
-  "remainingProducts": 11,
+  "pendingReason": "API ativada; usuário precisa cadastrar Secrets para testar descoberta oficial.",
+  "publicationUrl": "https://t.me/RespawnOfertasYuri/6",
+  "remainingProducts": 3,
   "catalogMode": "curated_photo",
   "catalogValidityDays": null,
   "schedule": {
@@ -56,12 +56,13 @@
     "timezone": "America/Sao_Paulo",
     "nextExpected": "2026-10-07T19:17:00-03:00",
     "firstScheduledExecutionObserved": false,
-    "verificationRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37383591655",
-    "verificationStatus": "deployment_pending"
+    "verificationRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37540404318",
+    "verificationStatus": "configured_and_cloud_checks_passed"
   },
   "shopeeApiAccess": "activated_credentials_generated_2026-10-06",
   "manualPhotoPublished": true,
   "manualPhotoPublicationUrl": "https://t.me/RespawnOfertasYuri/5",
   "automaticDiscoveryActive": false,
-  "queuedProducts": 4
+  "queuedProducts": 3,
+  "amazonProductsPending": 11
 }

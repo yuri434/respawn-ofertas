@@ -10,7 +10,7 @@ O bot publica exclusivamente no canal -1003910154291, após confirmar a própria
 
 Quando a fila termina, não envia outros produtos nem repete os anteriores. Actions pode continuar executando a conferência diária, dentro da franquia gratuita já conferida. Para pausar os envios, definir cloudEnabled=false em config.json. Manter state/history.json.
 
-Validação local: 28 testes aprovados. A validação na nuvem e a primeira publicação agendada devem ser registradas em preparacao-status.json; configurar o cron não confirma um envio futuro.
+Validação: 28 testes aprovados localmente e na nuvem em 06/10; bot e destino confirmados pela API oficial Telegram. Primeira foto enviada pelo bot na nuvem em 06/10 às 19:26: mouse Uniwity, https://t.me/RespawnOfertasYuri/6. Foto e legenda confirmadas pela API; histórico persistido no GitHub. Restam três itens na fila. Essa execução foi acionada manualmente; a primeira execução pelo horário agendado ainda não foi observada. Configurar o cron não confirma um envio futuro.
 
 - [Canal](https://t.me/RespawnOfertasYuri)
 - [GitHub Actions](https://github.com/yuri434/respawn-ofertas/actions/workflows/canal.yml)
