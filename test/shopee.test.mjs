@@ -29,6 +29,7 @@ test('dados API exigem modelo pertinente, anúncio exato, preço válido, foto o
   for(const change of [{ratingStar:'4.4'},{sales:0},{shopType:[]},{ratingStar:'NaN'}]) assert.equal(productFromNode({...node(),...change},5,now),null);
   assert.ok(productFromNode({...node(),productName:'Smartphone Samsung Galaxy S24'},10,now));
   assert.equal(productFromNode({...node(),productName:'Capa Samsung Galaxy S24'},10,now),null);
+  assert.equal(productFromNode({...node(),productName:'Placa de video RX 580 Recondicionada'},2,now),null);
   for(const change of [{productName:'Capa mouse gamer'},{productName:'Mouse gamer usado'},{productName:'Bicicleta'},{productLink:'https://shopee.com.br/product/1/2'},{imageUrl:'https://example.com/fake.jpg'},{offerLink:'https://evil.example/tracking'},{priceMin:'NaN'},{priceMin:'0'},{priceMax:'0.01'},{periodEndTime:0},{periodStartTime:Math.floor(+now/1000)+50},{itemId:Infinity}]) assert.equal(productFromNode({...node(),...change},5,now),null,JSON.stringify(change));
   assert.equal(offerStatus(p,new Date(+now+3600000)).ready,false);
   assert.equal(brlCents('10.01'),1001);assert.equal(brlCents('10'),1000);assert.equal(brlCents('0.001'),null);
