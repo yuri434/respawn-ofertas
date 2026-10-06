@@ -6,7 +6,7 @@ import { createShopee, productFromNode, discoverCatalog, brlCents, endpoint, ter
 import { offerStatus } from '../offers.mjs';
 import { validateCatalog, publishOnce } from '../core.mjs';
 const now = new Date('2026-10-06T22:00:00Z');
-const node = () => ({itemId:8746727497,shopId:428062352,productName:'Mouse gamer Redragon Cobra M711',imageUrl:'https://down-aka-br.img.susercontent.com/br-exact.webp',productLink:'https://shopee.com.br/product/428062352/8746727497',offerLink:'https://s.shopee.com.br/UNIT_TEST_ONLY',priceMin:'169.99',priceMax:'199.99',periodStartTime:Math.floor(+now/1000)-3600,periodEndTime:Math.floor(+now/1000)+3600});
+const node = () => ({itemId:8746727497,shopId:428062352,productName:'Mouse gamer Redragon Cobra M711',imageUrl:'https://down-aka-br.img.susercontent.com/br-exact.webp',productLink:'https://shopee.com.br/product/428062352/8746727497',offerLink:'https://s.shopee.com.br/UNIT_TEST_ONLY',priceMin:'169.99',priceMax:'199.99',ratingStar:'4.8',sales:50,shopType:[2],periodStartTime:Math.floor(+now/1000)-3600,periodEndTime:Math.floor(+now/1000)+3600});
 const config = JSON.parse(await fs.readFile(new URL('../config.json',import.meta.url),'utf8'));
 test('API assina o corpo realmente enviado, usa só endpoint oficial e oculta erros sensíveis', async()=>{
   const appId='123456',secret='FAKE_TEST_SECRET',calls=[];
@@ -25,13 +25,17 @@ test('API assina o corpo realmente enviado, usa só endpoint oficial e oculta er
 test('dados API exigem modelo pertinente, anúncio exato, preço válido, foto oficial e oferta vigente',()=>{
   const p=productFromNode(node(),5,now);assert.ok(p);assert.equal(offerStatus(p,now).ready,true);assert.equal(p.offerLink,node().offerLink);assert.equal(p.offer.coupon,null);
   assert.match(p.text,/Preço mínimo/);assert.match(p.text,/varia conforme a opção/);assert.doesNotMatch(p.text,/Cupom:/);
+  assert.ok(productFromNode({...node(),imageUrl:'https://cf.shopee.com.br/file/br-real-format'},5,now));
+  for(const change of [{ratingStar:'4.4'},{sales:0},{shopType:[]},{ratingStar:'NaN'}]) assert.equal(productFromNode({...node(),...change},5,now),null);
+  assert.ok(productFromNode({...node(),productName:'Smartphone Samsung Galaxy S24'},10,now));
+  assert.equal(productFromNode({...node(),productName:'Capa Samsung Galaxy S24'},10,now),null);
   for(const change of [{productName:'Capa mouse gamer'},{productName:'Mouse gamer usado'},{productName:'Bicicleta'},{productLink:'https://shopee.com.br/product/1/2'},{imageUrl:'https://example.com/fake.jpg'},{offerLink:'https://evil.example/tracking'},{priceMin:'NaN'},{priceMin:'0'},{priceMax:'0.01'},{periodEndTime:0},{periodStartTime:Math.floor(+now/1000)+50},{itemId:Infinity}]) assert.equal(productFromNode({...node(),...change},5,now),null,JSON.stringify(change));
   assert.equal(offerStatus(p,new Date(+now+3600000)).ready,false);
   assert.equal(brlCents('10.01'),1001);assert.equal(brlCents('10'),1000);assert.equal(brlCents('0.001'),null);
 });
 test('busca limitada deduplica IDs e links e nunca retorna produto publicado ou pendente',async()=>{
-  const queried=[];const names=['Processador AMD Ryzen 5','Processador Intel Core i5','Placa de video RTX 4060','Memoria DDR4','Memoria DDR5','Mouse gamer','Teclado gamer','Mousepad gamer','Jogo PS5'];
-  const api={search:async keyword=>{queried.push(keyword);const n={...node(),productName:names[terms.indexOf(keyword)]};return[n,n,{...n,itemId:55,productLink:'https://shopee.com.br/product/428062352/55'}];}};
+  const queried=[];
+  const api={search:async keyword=>{queried.push(keyword);const productName=keyword==='processador intel'?'Processador Intel Core i5':keyword==='placa de video'?'Placa de video RTX 4060':keyword+' 15';const n={...node(),productName};return[n,n,{...n,itemId:55,productLink:'https://shopee.com.br/product/428062352/55'}];}};
   const catalog=await discoverCatalog(api,{items:{}},now);assert.equal(catalog.products.length,1);assert.ok(queried.length<=2);
   assert.equal((await discoverCatalog(api,{items:{'shopee:8746727497':{status:'publicado',link:node().offerLink}}},now)).products.length,0);
   assert.equal((await discoverCatalog(api,{items:{'shopee:8746727497':{status:'confirmacao_pendente'}}},now)).products.some(p=>p.itemId==='shopee:8746727497'),false);
