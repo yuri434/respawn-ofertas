@@ -1,6 +1,6 @@
 {
   "platform": "telegram",
-  "catalogMode": "verified_offer",
+  "catalogMode": "curated_photo",
   "channel": {
     "name": "Respawn Ofertas",
     "visibility": "public",
@@ -14,8 +14,10 @@
   "timezone": "America/Sao_Paulo",
   "maxPerDay": 1,
   "maxCandidates": 3,
-  "cloudEnabled": false,
+  "cloudEnabled": true,
   "botAccessApproved": true,
   "githubFreeQuotaConfirmed": true,
-  "amazonChannelRegistered": true
+  "amazonChannelRegistered": true,
+  "catalogFile": "catalogo-fotos.json",
+  "shopeeApi": { "enabled": false, "credentialsLocation": "GitHub Actions Secrets", "requiresLiveCheck": true }
 }

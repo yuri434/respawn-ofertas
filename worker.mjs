@@ -2,10 +2,24 @@ import fs from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import { validateCatalog, chooseNext, authorizeLive, publishOnce, productStatus } from './core.mjs';
 import { createTelegram } from './telegram.mjs';
+import { checkedPhotoBytes } from './photos.mjs';
+import { createShopee, discoverCatalog } from './shopee.mjs';
 
 const read = async path => JSON.parse((await fs.readFile(path, 'utf8')).replace(/^\uFEFF/, ''));
-const config = await read('config.json'), catalog = await read('catalogo.json'), history = await read('state/history.json');
-const totals = validateCatalog(config, catalog), mode = process.argv[2] ?? 'check';
+let config = await read('config.json');
+if (!['catalogo.json', 'catalogo-fotos.json'].includes(config.catalogFile ?? 'catalogo.json')) throw new Error('Arquivo de catálogo não autorizado.');
+let catalog = await read(config.catalogFile ?? 'catalogo.json');
+const history = await read('state/history.json'), mode = process.argv[2] ?? 'check';
+if (mode === 'api_check' || (mode === 'publish' && config.shopeeApi?.enabled === true)) {
+  if (mode === 'publish') {
+    authorizeLive(config);
+    const gates = chooseNext(config,{products:[]},history);
+    if (gates.blocked) { console.log(gates.reason); process.exit(0); }
+  }
+  catalog = await discoverCatalog(createShopee(process.env.SHOPEE_APP_ID,process.env.SHOPEE_API_SECRET),history);
+  config = {...config,catalogMode:'verified_offer'};
+}
+const totals = validateCatalog(config, catalog);
 async function persist() {
   await fs.writeFile('state/history.json.tmp', JSON.stringify(history, null, 2) + '\n');
   await fs.rename('state/history.json.tmp', 'state/history.json');
@@ -19,7 +33,12 @@ async function persist() {
 }
 
 if (mode === 'check') {
-  console.log(JSON.stringify({ ...totals, platform: 'telegram', catalogMode: config.catalogMode, enabled: config.cloudEnabled, next: chooseNext(config, catalog, history).product?.title ?? null, livePublication: false }, null, 2));
+  if (config.catalogMode === 'curated_photo') for (const product of catalog.products) await checkedPhotoBytes(product.photo);
+  const selection = chooseNext(config, catalog, history);
+  console.log(JSON.stringify({ ...totals, platform: 'telegram', catalogMode: config.catalogMode, enabled: config.cloudEnabled, queuedUnpublished: catalog.products.filter(p => history.items[p.itemId]?.status !== 'publicado').length, readyProducts: catalog.products.filter(p => productStatus(config,p).ready).length, next: selection.product?.title ?? null, blockedReason: selection.reason ?? null, livePublication: false }, null, 2));
+} else if (mode === 'api_check') {
+  console.log(JSON.stringify({source:'Shopee Affiliate Open API',readyProducts:catalog.products.length,livePublication:false,products:catalog.products.map(p=>({title:p.title,itemId:p.itemId,link:p.offerLink,photo:p.offer.image.url,priceConditions:p.offer.price.conditions,coupon:null}))},null,2));
+  if (!catalog.products.length) throw new Error('API respondeu, mas nenhum produto completo e pertinente foi encontrado nas duas buscas.');
 } else if (mode === 'verify') {
   console.log(JSON.stringify(await createTelegram(config, process.env.TELEGRAM_BOT_TOKEN).verify(), null, 2));
 } else if (mode === 'discover') {

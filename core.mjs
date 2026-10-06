@@ -1,5 +1,6 @@
 import { createHash } from 'node:crypto';
 import { offerStatus, offerCaption } from './offers.mjs';
+import { curatedPhotoStatus, checkedPhotoBytes } from './photos.mjs';
 import { disclosure, amazonDisclosure } from './offers.mjs';
 export { disclosure, amazonDisclosure } from './offers.mjs';
 
@@ -30,12 +31,13 @@ export function validateCatalog(config, catalog) {
     if (url.protocol !== 'https:') throw new Error('URL inválida.');
     if (p.retailer === 'Amazon') {
       if (url.hostname !== 'www.amazon.com.br' || url.searchParams.get('tag') !== 'achadi0b92c92-20' || !url.pathname.includes('/dp/' + p.asin) || !p.text.includes(amazonDisclosure)) throw new Error('Rastreamento Amazon inválido.');
-    } else if (url.hostname !== 's.shopee.com.br') throw new Error('Loja não configurada.');
+    } else if (url.hostname !== 's.shopee.com.br' && !(url.hostname === 'shope.ee' && p.offer?.dataProvider === 'Shopee Affiliate Open API')) throw new Error('Loja não configurada.');
   }
   return { total: catalog.products.length, amazon: catalog.products.filter(p => p.retailer === 'Amazon').length };
 }
 
 export function productStatus(config, product, now = new Date()) {
+  if (config.catalogMode === 'curated_photo') return curatedPhotoStatus(product, now);
   if (config.catalogMode === 'verified_offer') return offerStatus(product, now);
   return curatedProductStatus(config, product, now);
 }
@@ -87,14 +89,15 @@ export async function publishOnce({ config, catalog, history, provider, persist,
   if (p.retailer === 'Amazon' && !config.amazonChannelRegistered) throw new Error('Cadastrar o canal Telegram na conta de Associados antes de divulgar Amazon.');
   const source = productStatus(config, p, now);
   if (!source.ready) return { published: false, reason: source.reason };
-  const photoMode = config.catalogMode === 'verified_offer';
-  const text = photoMode ? offerCaption(p) : p.text;
+  const photoMode = ['verified_offer', 'curated_photo'].includes(config.catalogMode);
+  const text = config.catalogMode === 'verified_offer' ? offerCaption(p) : p.text;
+  if (config.catalogMode === 'curated_photo') await checkedPhotoBytes(p.photo);
   await provider.verify();
   // Persistir na nuvem antes do envio: uma falha impede enviar, sem repetição automática.
   history.items[p.itemId] = { status: 'enviando', at: now.toISOString(), text, link: p.offerLink, channelId: config.channel.id, format: photoMode ? 'photo' : 'text' };
   await persist();
   try {
-    const receipt = photoMode ? await provider.sendPhoto(p.offer.image.url, text) : await provider.send(text);
+    const receipt = config.catalogMode === 'curated_photo' ? await provider.sendLocalPhoto(p.photo, text) : photoMode ? await provider.sendPhoto(p.offer.image.url, text) : await provider.send(text);
     const contentMatches = photoMode ? receipt.caption === text && Array.isArray(receipt.photo) && receipt.photo.length > 0 : receipt.text === text;
     if (receipt.chat?.type !== 'channel' || receipt.chat.id !== config.channel.id || !contentMatches || !Number.isSafeInteger(receipt.message_id)) throw new Error('Resposta não confirmou o conteúdo no canal correto.');
     history.items[p.itemId] = { ...history.items[p.itemId], status: 'publicado', confirmedAt: now.toISOString(), messageId: receipt.message_id, evidence: 'Telegram Bot API retornou a mensagem enviada ao canal correto.', url: messageUrl(config, receipt.message_id) };

@@ -3,15 +3,15 @@
   "channelName": "Respawn Ofertas",
   "platform": "telegram",
   "candidateShopeeProducts": 54,
-  "stage": "manual_photo_published_official_api_pending",
+  "stage": "curated_photo_cloud_activation_prepared",
   "whatsappSessionCreated": false,
-  "activeCatalogProducts": 12,
-  "cloudEnabled": false,
+  "activeCatalogProducts": 4,
+  "cloudEnabled": true,
   "postsPublished": 2,
   "telegramTokenStored": true,
   "whatsappAutomation": "PAUSED",
   "tests": {
-    "passed": 20,
+    "passed": 28,
     "liveIntegrationTested": true,
     "failed": 0,
     "photoProductionTested": false
@@ -45,22 +45,23 @@
   "verifyStatus": "success",
   "publishTestRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37383416606",
   "publishTestStatus": "success_message_confirmed",
-  "scheduleActive": false,
-  "pendingReason": "APIs oficiais das lojas ainda indisponíveis. Conferência manual autorizada; oferta Shopee com foto publicada. Busca automática e teste de foto pelo bot em nuvem permanecem pendentes.",
+  "scheduleActive": true,
+  "pendingReason": "API Shopee liberada; Secrets e teste real pendentes. Fila com fotos pronta para implantação.",
   "publicationUrl": "https://t.me/RespawnOfertasYuri/3",
   "remainingProducts": 11,
-  "catalogMode": "verified_offer",
+  "catalogMode": "curated_photo",
   "catalogValidityDays": null,
   "schedule": {
     "cron": "17 19 * * *",
     "timezone": "America/Sao_Paulo",
-    "nextExpected": null,
+    "nextExpected": "2026-10-07T19:17:00-03:00",
     "firstScheduledExecutionObserved": false,
     "verificationRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37383591655",
-    "verificationStatus": "disabled_after_user_requested_photo"
+    "verificationStatus": "deployment_pending"
   },
-  "shopeeApiAccess": "unavailable_contact_support",
+  "shopeeApiAccess": "activated_credentials_generated_2026-10-06",
   "manualPhotoPublished": true,
   "manualPhotoPublicationUrl": "https://t.me/RespawnOfertasYuri/5",
-  "automaticDiscoveryActive": false
+  "automaticDiscoveryActive": false,
+  "queuedProducts": 4
 }

@@ -1,5 +1,7 @@
 # Respawn Ofertas — foto, preço e cupom
 
+**Atualização de 06/10:** API Shopee ativada no portal com autorização do usuário; AppID e Senha gerados, sem leitura ou cópia de seus valores. Integração implementada e 28 testes locais aprovados. Uso real da API ainda depende de o usuário cadastrar os dois Secrets e de executar `api_check`. Consulte [API-SHOPEE.md](API-SHOPEE.md). Até lá, a fila autorizada usa `curated_photo`, `catalogo-fotos.json`, um post por dia às 19:17 de São Paulo. Próxima execução esperada após implantação: 07/10. Consulte [ROTINA-AUTOMATICA.md](ROTINA-AUTOMATICA.md). As seções abaixo são histórico de 05/10 e não representam a liberação atual da API Shopee.
+
 Canal público autorizado: https://t.me/RespawnOfertasYuri. Repositório privado: https://github.com/yuri434/respawn-ofertas.
 
 ## Estado em 05/10/2026

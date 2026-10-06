@@ -1,15 +1,16 @@
 import { channelTarget, channelUsername } from './core.mjs';
+import { checkedPhotoBytes } from './photos.mjs';
 
 export function createTelegram(config, token, fetchImpl = fetch) {
   if (!/^\d+:[a-zA-Z0-9_-]{20,}$/.test(token ?? '')) throw new Error('Configure TELEGRAM_BOT_TOKEN nos Secrets do GitHub; não coloque a chave em arquivos ou no chat.');
   const allowed = new Set(['getMe', 'getChat', 'getChatMember', 'sendMessage', 'sendPhoto', 'getUpdates']);
-  async function call(method, body) {
+  async function call(method, body, multipart = false) {
     if (!allowed.has(method)) throw new Error('Método Telegram não autorizado.');
     let response, data;
     try {
       response = await fetchImpl('https://api.telegram.org/bot' + token + '/' + method, {
-        method: 'POST', redirect: 'error', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(body), signal: AbortSignal.timeout(20000)
+        method: 'POST', redirect: 'error', headers: multipart ? {} : { 'Content-Type': 'application/json' },
+        body: multipart ? body : JSON.stringify(body), signal: AbortSignal.timeout(20000)
       });
       data = await response.json();
     } catch { throw new Error('Falha de comunicação com Telegram em ' + method + '. A chave não será exibida.'); }
@@ -29,6 +30,16 @@ export function createTelegram(config, token, fetchImpl = fetch) {
   }
   return {
     verify,
+    async sendLocalPhoto(photo, caption) {
+      if (!Number.isSafeInteger(config.channel.id) || config.channel.id >= 0 || !/^imagens\/[a-z0-9-]+\.jpg$/.test(photo.path ?? '') || [...caption].length > 1024) throw new Error('Foto local, legenda ou canal inválido.');
+      const bytes = await checkedPhotoBytes(photo);
+      const form = new FormData();
+      form.set('chat_id', String(config.channel.id));
+      form.set('caption', caption);
+      form.set('allow_paid_broadcast', 'false');
+      form.set('photo', new Blob([bytes], { type: 'image/jpeg' }), photo.path.split('/').pop());
+      return call('sendPhoto', form, true);
+    },
     async discover() {
       const bot = await call('getMe', {});
       if (!bot.is_bot || (config.bot.id && bot.id !== config.bot.id) || (config.bot.username && bot.username !== config.bot.username)) throw new Error('Bot diferente do configurado.');
