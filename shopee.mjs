@@ -5,7 +5,7 @@ export const endpoint = 'https://open-api.affiliate.shopee.com.br/graphql';
 export const terms = ['processador ryzen', 'processador intel', 'placa de video', 'memoria ddr4', 'memoria ddr5', 'mouse gamer', 'teclado gamer', 'mousepad gamer', 'jogo ps5', 'cooler processador', 'smartphone samsung', 'smartphone motorola', 'smartphone xiaomi', 'iphone', 'notebook gamer', 'pc gamer', 'monitor gamer', 'cadeira gamer', 'console ps5', 'console xbox', 'nintendo switch', 'jogo xbox', 'jogo nintendo switch', 'ssd nvme', 'headset gamer', 'controle gamer', 'placa mae', 'fonte pc', 'gabinete gamer', 'microfone gamer'];
 const clean = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 const matchers = [/\bryzen\b/, /\bintel\b.*\b(i[3579]|core)\b|\bcore\b.*\bintel\b/, /\b(rtx|gtx|radeon|rx\s*\d|arc\s*[ab]\d)/, /\bddr4\b/, /\bddr5\b/, /\bmouse\b/, /\bteclado\b/, /\bmouse\s*pad\b|\bmousepad\b/, /\b(jogo|game)\b.*\bps5\b|\bps5\b.*\b(jogo|game)\b/, /\bcooler\b/, /\bsamsung\b/, /\bmotorola\b|\bmoto\b/, /\bxiaomi\b|\bredmi\b|\bpoco\b/, /\biphone\s*\d/, /\b(notebook|laptop)\b/, /\b(pc|computador|desktop)\b/, /\bmonitor\b/, /\bcadeira\b/, /\b(ps5|playstation 5)\b/, /\bxbox\b/, /\bnintendo\b.*\bswitch\b/, /\b(jogo|game)\b.*\bxbox\b|\bxbox\b.*\b(jogo|game)\b/, /\b(jogo|game)\b.*\bswitch\b|\bswitch\b.*\b(jogo|game)\b/, /\b(ssd|nvme)\b/, /\b(headset|fone)\b/, /\b(controle|joystick|gamepad)\b/, /\bplaca\s*mae\b/, /\bfonte\b/, /\bgabinete\b/, /\bmicrofone\b/];
-const reject = /\b(defeito|quebrado|usado|segunda mao|recondicionado|seminovo|caixa vazia|somente caixa|miniatura|chaveiro|skin|adesivo|suporte|capa|case|reparo|pelicula|bateria|carregador|touch|display)\b/;
+const reject = /\b(defeito|quebrado|usado|segunda mao|recondicionado|seminovo|caixa vazia|somente caixa|miniatura|chaveiro|skin|adesivo|suporte|capa|case|reparo|pelicula|bateria|carregador|touch|display|adaptador|conversor|organizador)\b/;
 export function brlCents(value) {
   if (!/^\d{1,8}(\.\d{1,2})?$/.test(String(value))) return null;
   const [whole, fractional = ''] = String(value).split('.');
@@ -27,7 +27,7 @@ export function createShopee(appId, secret, fetchImpl = fetch, clock = () => new
   return {
     async search(keyword) {
       if (!terms.includes(keyword)) throw new Error('Busca fora das categorias autorizadas.');
-      const payload = JSON.stringify({ query: `{productOfferV2(keyword:${JSON.stringify(keyword)},sortType:1,page:1,limit:20){nodes{itemId shopId productName imageUrl productLink offerLink priceMin priceMax ratingStar sales shopType periodStartTime periodEndTime} pageInfo{hasNextPage}}}` });
+      const payload = JSON.stringify({ query: `{productOfferV2(keyword:${JSON.stringify(keyword)},sortType:2,page:1,limit:20){nodes{itemId shopId productName imageUrl productLink offerLink priceMin priceMax ratingStar sales shopType periodStartTime periodEndTime} pageInfo{hasNextPage}}}` });
       const timestamp = String(Math.floor(clock().getTime() / 1000));
       let response, data;
       try {
@@ -74,7 +74,7 @@ export async function discoverCatalog(api, history, now = new Date(), onQuery = 
   const day = new Intl.DateTimeFormat('sv-SE',{timeZone:'America/Sao_Paulo'}).format(now);
   const start = Math.floor(Date.parse(day+'T00:00:00Z')/86400000) % terms.length;
   const products = [], seen = new Set(), seenLinks = new Set(Object.values(history.items).filter(i=>i.status==='publicado').map(i=>i.link));
-  for (let offset=0;offset<2;offset++) {
+  for (let offset=0;offset<4;offset++) {
     const index = (start+offset)%terms.length;
     const nodes = await api.search(terms[index]);
     onQuery({keyword:terms[index],returned:nodes.length,sample:nodes.slice(0,3)});

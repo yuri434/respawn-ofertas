@@ -38,7 +38,7 @@ if (mode === 'check') {
   console.log(JSON.stringify({ ...totals, platform: 'telegram', catalogMode: config.catalogMode, enabled: config.cloudEnabled, queuedUnpublished: catalog.products.filter(p => history.items[p.itemId]?.status !== 'publicado').length, readyProducts: catalog.products.filter(p => productStatus(config,p).ready).length, next: selection.product?.title ?? null, blockedReason: selection.reason ?? null, livePublication: false }, null, 2));
 } else if (mode === 'api_check') {
   console.log(JSON.stringify({source:'Shopee Affiliate Open API',readyProducts:catalog.products.length,livePublication:false,products:catalog.products.map(p=>({title:p.title,itemId:p.itemId,link:p.offerLink,photo:p.offer.image.url,priceCents:p.offer.price.cents,priceConditions:p.offer.price.conditions,caption:p.text,coupon:null}))},null,2));
-  if (!catalog.products.length) throw new Error('API respondeu, mas nenhum produto completo e pertinente foi encontrado nas duas buscas.');
+  if (!catalog.products.length) throw new Error('API respondeu, mas nenhum produto completo e pertinente foi encontrado nas quatro buscas.');
 } else if (mode === 'verify') {
   console.log(JSON.stringify(await createTelegram(config, process.env.TELEGRAM_BOT_TOKEN).verify(), null, 2));
 } else if (mode === 'discover') {
