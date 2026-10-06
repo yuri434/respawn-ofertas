@@ -2,10 +2,10 @@ import { createHash } from 'node:crypto';
 import { offerCaption, offerStatus } from './offers.mjs';
 
 export const endpoint = 'https://open-api.affiliate.shopee.com.br/graphql';
-export const terms = ['processador ryzen', 'processador intel', 'placa de video', 'memoria ddr4', 'memoria ddr5', 'mouse gamer', 'teclado gamer', 'mousepad gamer', 'jogo ps5'];
+export const terms = ['processador ryzen', 'processador intel', 'placa de video', 'memoria ddr4', 'memoria ddr5', 'mouse gamer', 'teclado gamer', 'mousepad gamer', 'jogo ps5', 'cooler processador', 'smartphone samsung', 'smartphone motorola', 'smartphone xiaomi', 'iphone'];
 const clean = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
-const matchers = [/\bryzen\b/, /\bintel\b.*\b(i[3579]|core)\b|\bcore\b.*\bintel\b/, /\b(rtx|gtx|radeon|rx\s*\d|arc\s*[ab]\d)/, /\bddr4\b/, /\bddr5\b/, /\bmouse\b/, /\bteclado\b/, /\bmouse\s*pad\b|\bmousepad\b/, /\b(jogo|game)\b.*\bps5\b|\bps5\b.*\b(jogo|game)\b/];
-const reject = /\b(defeito|quebrado|usado|segunda mao|caixa vazia|somente caixa|miniatura|chaveiro|skin|adesivo|suporte|capa|case|reparo)\b/;
+const matchers = [/\bryzen\b/, /\bintel\b.*\b(i[3579]|core)\b|\bcore\b.*\bintel\b/, /\b(rtx|gtx|radeon|rx\s*\d|arc\s*[ab]\d)/, /\bddr4\b/, /\bddr5\b/, /\bmouse\b/, /\bteclado\b/, /\bmouse\s*pad\b|\bmousepad\b/, /\b(jogo|game)\b.*\bps5\b|\bps5\b.*\b(jogo|game)\b/, /\bcooler\b/, /\bsamsung\b/, /\bmotorola\b|\bmoto\b/, /\bxiaomi\b|\bredmi\b|\bpoco\b/, /\biphone\s*\d/];
+const reject = /\b(defeito|quebrado|usado|segunda mao|recondicionado|seminovo|caixa vazia|somente caixa|miniatura|chaveiro|skin|adesivo|suporte|capa|case|reparo|pelicula|bateria|carregador|touch|display)\b/;
 export function brlCents(value) {
   if (!/^\d{1,8}(\.\d{1,2})?$/.test(String(value))) return null;
   const [whole, fractional = ''] = String(value).split('.');
@@ -47,10 +47,11 @@ export function createShopee(appId, secret, fetchImpl = fetch, clock = () => new
 export function productFromNode(node, termIndex, now = new Date()) {
   const title = typeof node.productName === 'string' ? node.productName.trim() : '';
   if (!title || title.length > 200 || /[\n\r\u0000-\u001f]/.test(title) || !matchers[termIndex]?.test(clean(title)) || reject.test(clean(title))) return null;
+  if (termIndex >= 10 && termIndex <= 12 && !/\b(smartphone|celular|telefone)\b/.test(clean(title))) return null;
   if (!Number.isSafeInteger(node.itemId) || node.itemId <= 0 || !Number.isSafeInteger(node.shopId) || node.shopId <= 0) return null;
   const id = 'shopee:' + node.itemId, min = brlCents(node.priceMin), max = brlCents(node.priceMax);
   if (!min || !max || max < min) return null;
-  if (!allowedUrl(node.productLink,['shopee.com.br','www.shopee.com.br']) || !allowedUrl(node.offerLink,['s.shopee.com.br','shope.ee']) || !allowedUrl(node.imageUrl,['.img.susercontent.com','.img.shopee.com.br'])) return null;
+  if (!allowedUrl(node.productLink,['shopee.com.br','www.shopee.com.br']) || !allowedUrl(node.offerLink,['s.shopee.com.br','shope.ee']) || !allowedUrl(node.imageUrl,['cf.shopee.com.br','.img.susercontent.com','.img.shopee.com.br'])) return null;
   const path = new URL(node.productLink).pathname;
   if (path !== `/product/${node.shopId}/${node.itemId}` && !path.endsWith(`-i.${node.shopId}.${node.itemId}`)) return null;
   const sec = Math.floor(now.getTime()/1000);

@@ -21,7 +21,7 @@ export function offerCaption(product) {
   const checked = new Intl.DateTimeFormat('pt-BR', { timeZone: 'America/Sao_Paulo', dateStyle: 'short', timeStyle: 'short' }).format(new Date(o.checkedAt));
   const parts = ['🎮 ' + product.title, '💰 Valor: ' + price + '\n' + o.price.conditions.trim()];
   if (o.coupon) parts.push('🎟 Cupom: ' + o.coupon.code + '\n' + o.coupon.conditions.trim());
-  parts.push('👉 Comprar: ' + product.offerLink, 'Conferido em ' + checked + ' (São Paulo). Preço e disponibilidade podem mudar.', disclosure);
+  parts.push('👉 Abrir oferta — PC/celular: ' + product.offerLink, 'Conferido em ' + checked + ' (São Paulo). Preço e disponibilidade podem mudar.', disclosure);
   if (product.retailer === 'Amazon') parts.push(amazonDisclosure);
   const caption = parts.join('\n\n');
   if ([...caption].length > 1024) throw new Error('Legenda excede o limite de foto do Telegram; resumir sem remover as condições ou o link.');
