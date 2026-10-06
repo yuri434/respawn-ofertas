@@ -66,13 +66,15 @@ export function productFromNode(node, termIndex, now = new Date()) {
   return offerStatus(p,now).ready ? p : null;
 }
 
-export async function discoverCatalog(api, history, now = new Date()) {
+export async function discoverCatalog(api, history, now = new Date(), onQuery = () => {}) {
   const day = new Intl.DateTimeFormat('sv-SE',{timeZone:'America/Sao_Paulo'}).format(now);
   const start = Math.floor(Date.parse(day+'T00:00:00Z')/86400000) % terms.length;
   const products = [], seen = new Set(), seenLinks = new Set(Object.values(history.items).filter(i=>i.status==='publicado').map(i=>i.link));
   for (let offset=0;offset<2;offset++) {
     const index = (start+offset)%terms.length;
-    for (const node of await api.search(terms[index])) {
+    const nodes = await api.search(terms[index]);
+    onQuery({keyword:terms[index],returned:nodes.length,sample:nodes.slice(0,3)});
+    for (const node of nodes) {
       const p = productFromNode(node,index,now);
       if (!p || seen.has(p.itemId) || seenLinks.has(p.offerLink) || ['publicado','enviando','confirmacao_pendente'].includes(history.items[p.itemId]?.status)) continue;
       seen.add(p.itemId); seenLinks.add(p.offerLink); products.push(p);
