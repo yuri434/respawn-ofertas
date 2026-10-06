@@ -41,12 +41,16 @@
       "evidence": "Mensagem com foto 800x800 e legenda visível no canal correto. Link obtido pelo comando Copy Message Link do Telegram."
     },
     "shopee:26044322175": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-06T22:26:03.069Z",
       "text": "🎮 Mouse sem fio recarregável Uniwity\n\nQuer um mouse sem fio para a mesa? Confira as conexões disponíveis, as medidas e as opções deste modelo no anúncio.\n\nConfira o preço, as opções e a disponibilidade no anúncio:\nhttps://s.shopee.com.br/40h2SZ7aMe\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/40h2SZ7aMe",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-06T22:26:03.069Z",
+      "messageId": 6,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/6"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
