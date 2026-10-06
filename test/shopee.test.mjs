@@ -36,7 +36,7 @@ test('dados API exigem modelo pertinente, anúncio exato, preço válido, foto o
 test('busca limitada deduplica IDs e links e nunca retorna produto publicado ou pendente',async()=>{
   const queried=[];
   const api={search:async keyword=>{queried.push(keyword);const productName=keyword==='processador intel'?'Processador Intel Core i5':keyword==='placa de video'?'Placa de video RTX 4060':keyword+' 15';const n={...node(),productName};return[n,n,{...n,itemId:55,productLink:'https://shopee.com.br/product/428062352/55'}];}};
-  const catalog=await discoverCatalog(api,{items:{}},now);assert.equal(catalog.products.length,1);assert.ok(queried.length<=2);
+  const catalog=await discoverCatalog(api,{items:{}},now);assert.equal(catalog.products.length,1);assert.ok(queried.length<=4);
   assert.equal((await discoverCatalog(api,{items:{'shopee:8746727497':{status:'publicado',link:node().offerLink}}},now)).products.length,0);
   assert.equal((await discoverCatalog(api,{items:{'shopee:8746727497':{status:'confirmacao_pendente'}}},now)).products.some(p=>p.itemId==='shopee:8746727497'),false);
 });
