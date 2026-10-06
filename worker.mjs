@@ -33,6 +33,11 @@ async function persist() {
 }
 
 if (mode === 'check') {
+  if (config.shopeeApi?.enabled === true) {
+    const gates = chooseNext(config,{products:[]},history);
+    console.log(JSON.stringify({platform:'telegram',catalogMode:'shopee_api',enabled:config.cloudEnabled,maxPerDay:config.maxPerDay,blockedReason:gates.reason??null,sourceCheck:'Use api_check para consultar dados atuais sem publicar.',livePublication:false},null,2));
+    process.exit(0);
+  }
   if (config.catalogMode === 'curated_photo') for (const product of catalog.products) await checkedPhotoBytes(product.photo);
   const selection = chooseNext(config, catalog, history);
   console.log(JSON.stringify({ ...totals, platform: 'telegram', catalogMode: config.catalogMode, enabled: config.cloudEnabled, queuedUnpublished: catalog.products.filter(p => history.items[p.itemId]?.status !== 'publicado').length, readyProducts: catalog.products.filter(p => productStatus(config,p).ready).length, next: selection.product?.title ?? null, blockedReason: selection.reason ?? null, livePublication: false }, null, 2));
