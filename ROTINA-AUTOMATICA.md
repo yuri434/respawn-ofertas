@@ -1,6 +1,6 @@
 # Rotina automática do Respawn Ofertas
 
-Atualização em 07/10/2026: ativado cron */5 * * * * para consulta e até um envio a cada cinco minutos, com o PC desligado. O job agendado só executa em repositório público. GitHub pode atrasar ou omitir execuções; não é um temporizador pontual garantido. Sem produto completo elegível, não publica.
+Atualização em 07/10/2026: ativado cron 2/5 * * * * para consulta e até um envio a cada cinco minutos, com o PC desligado. O job agendado só executa em repositório público. GitHub pode atrasar ou omitir execuções; não é um temporizador pontual garantido. Sem produto completo elegível, não publica.
 
 Alterna categorias a cada janela, consultando a API oficial Shopee até quatro vezes. Mantém foto oficial, preço, período vigente, link integral de afiliado, avaliações, vendas e tipo de loja. Não inventa cupons, descontos, compatibilidade nem desempenho. Esta API não fornece cupons. Amazon ainda não participa da descoberta automática.
 

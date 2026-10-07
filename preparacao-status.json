@@ -53,12 +53,13 @@
   "catalogMode": "shopee_api",
   "catalogValidityDays": null,
   "schedule": {
-    "cron": "*/5 * * * *",
+    "cron": "2/5 * * * *",
     "timezone": "America/Sao_Paulo",
     "nextExpected": null,
     "firstScheduledExecutionObserved": false,
     "verificationRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37687104378",
-    "verificationStatus": "public_five_minute_cron_active"
+    "verificationStatus": "enabled_offset_five_minutes_awaiting_first_scheduled_run",
+    "offsetReason": "Manter cinco minutos evitando o início da hora, conforme documentação GitHub."
   },
   "shopeeApiAccess": "activated_credentials_generated_2026-10-06",
   "manualPhotoPublished": true,
