@@ -6,7 +6,7 @@ import { createTelegram } from '../telegram.mjs';
 
 const read = async name => JSON.parse((await fs.readFile(new URL('../' + name, import.meta.url), 'utf8')).replace(/^\uFEFF/, ''));
 const base = await read('config.json'), catalog = await read('catalogo.json');
-const live = () => ({ ...structuredClone(base), catalogMode: 'curated', cloudEnabled: true, botAccessApproved: true, githubFreeQuotaConfirmed: true, amazonChannelRegistered: true, channel: { name: 'Respawn Ofertas', visibility: 'public', url: 'https://t.me/respawnofertas', id: -1001234567890 }, bot: { id: 123456789, username: 'respawn_test_bot' } });
+const live = () => ({ ...structuredClone(base), maxPerDay: 1, minIntervalMinutes: 240, catalogMode: 'curated', cloudEnabled: true, botAccessApproved: true, githubFreeQuotaConfirmed: true, amazonChannelRegistered: true, channel: { name: 'Respawn Ofertas', visibility: 'public', url: 'https://t.me/respawnofertas', id: -1001234567890 }, bot: { id: 123456789, username: 'respawn_test_bot' } });
 const receipt = (c, text) => ({ message_id: 123, chat: { type: 'channel', id: c.channel.id }, text });
 const provider = (c, send) => ({ verify: async () => {}, send: send ?? (async text => receipt(c, text)) });
 const token = '123456789:UNIT_TEST_TOKEN_NO_REAL_CREDENTIAL';
@@ -42,7 +42,7 @@ test('catálogo exige fonte, modelo e data válidos sem publicar preço ou desco
   }
 });
 test('dia local correto na virada de UTC', () => {
-  assert.equal(chooseNext(base, catalog, { items: { a: { status: 'publicado', confirmedAt: '2026-10-05T00:30:00Z' } } }, new Date('2026-10-05T01:00:00Z')).blocked, true);
+  assert.equal(chooseNext(live(), catalog, { items: { a: { status: 'publicado', confirmedAt: '2026-10-05T00:30:00Z' } } }, new Date('2026-10-05T01:00:00Z')).blocked, true);
 });
 test('falha na persistência anterior impede o envio', async () => {
   const c = live(); let sends = 0;
