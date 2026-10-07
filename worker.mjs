@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import { execFileSync } from 'node:child_process';
+import { saveGitHistory } from './history-store.mjs';
 import { validateCatalog, chooseNext, authorizeLive, publishOnce, productStatus } from './core.mjs';
 import { createTelegram } from './telegram.mjs';
 import { checkedPhotoBytes } from './photos.mjs';
@@ -24,11 +24,7 @@ async function persist() {
   await fs.writeFile('state/history.json.tmp', JSON.stringify(history, null, 2) + '\n');
   await fs.rename('state/history.json.tmp', 'state/history.json');
   if (process.env.GITHUB_ACTIONS === 'true') {
-    execFileSync('git', ['add', '--', 'state/history.json'], { stdio: 'ignore' });
-    try { execFileSync('git', ['diff', '--cached', '--quiet'], { stdio: 'ignore' }); return; }
-    catch (error) { if (error.status !== 1) throw error; }
-    execFileSync('git', ['commit', '-m', 'Atualizar publicações Telegram'], { stdio: 'ignore' });
-    execFileSync('git', ['push', 'origin', 'HEAD'], { stdio: 'ignore' });
+    await saveGitHistory();
   }
 }
 

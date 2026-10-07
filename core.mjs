@@ -108,11 +108,13 @@ export async function publishOnce({ config, catalog, history, provider, persist,
     const contentMatches = photoMode ? receipt.caption === text && Array.isArray(receipt.photo) && receipt.photo.length > 0 : receipt.text === text;
     if (receipt.chat?.type !== 'channel' || receipt.chat.id !== config.channel.id || !contentMatches || !Number.isSafeInteger(receipt.message_id)) throw new Error('Resposta não confirmou o conteúdo no canal correto.');
     history.items[p.itemId] = { ...history.items[p.itemId], status: 'publicado', confirmedAt: now.toISOString(), messageId: receipt.message_id, evidence: 'Telegram Bot API retornou a mensagem enviada ao canal correto.', url: messageUrl(config, receipt.message_id) };
-    await persist();
-    return { published: true, title: p.title, url: history.items[p.itemId].url };
   } catch (error) {
     history.items[p.itemId] = { ...history.items[p.itemId], status: 'confirmacao_pendente', reason: error.message };
     await persist();
     throw error;
   }
+  // A confirmed Telegram receipt remains confirmed even if Git persistence fails.
+  // The remote reservation still blocks sending again until it is reconciled.
+  await persist();
+  return { published: true, title: p.title, url: history.items[p.itemId].url };
 }
