@@ -3,19 +3,19 @@
   "channelName": "Respawn Ofertas",
   "platform": "telegram",
   "candidateShopeeProducts": 54,
-  "stage": "five_minute_prepared_publication_pending",
+  "stage": "public_five_minute_active_verified_cloud_publish",
   "whatsappSessionCreated": false,
   "activeCatalogProducts": null,
   "cloudEnabled": true,
-  "postsPublished": 3,
+  "postsPublished": 5,
   "telegramTokenStored": true,
   "whatsappAutomation": "PAUSED",
   "tests": {
-    "passed": 31,
+    "passed": 35,
     "liveIntegrationTested": true,
     "failed": 0,
     "photoProductionTested": true,
-    "apiPricedPhotoProductionTested": false
+    "apiPricedPhotoProductionTested": true
   },
   "channelVisibility": "public",
   "channelVerifiedInBrowser": true,
@@ -29,8 +29,8 @@
     "checkedOn": "2026-10-05",
     "usedBeforeTest": 0
   },
-  "cloudCheckRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37540404318",
-  "cloudCheckStatus": "success_28_tests_queue_and_telegram_verified",
+  "cloudCheckRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37688683392",
+  "cloudCheckStatus": "success_35_tests_live_photo_price_publication",
   "botAdminVerified": true,
   "botIdentityVerified": true,
   "botId": 8112013305,
@@ -44,11 +44,11 @@
   "amazonDestinationSaved": true,
   "verifyRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37540404318",
   "verifyStatus": "success",
-  "publishTestRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37540529444",
-  "publishTestStatus": "success_photo_caption_channel_and_history_confirmed",
+  "publishTestRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37688683392",
+  "publishTestStatus": "success_photo_price_and_history_saved",
   "scheduleActive": true,
-  "pendingReason": "Implantar arquivos, testar na nuvem e concluir mudança para repositório público.",
-  "publicationUrl": "https://t.me/RespawnOfertasYuri/6",
+  "pendingReason": null,
+  "publicationUrl": "https://t.me/RespawnOfertasYuri/8",
   "remainingProducts": null,
   "catalogMode": "shopee_api",
   "catalogValidityDays": null,
@@ -57,8 +57,8 @@
     "timezone": "America/Sao_Paulo",
     "nextExpected": null,
     "firstScheduledExecutionObserved": false,
-    "verificationRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37540404318",
-    "verificationStatus": "new_cadence_pending_cloud_check"
+    "verificationRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37687104378",
+    "verificationStatus": "public_five_minute_cron_active"
   },
   "shopeeApiAccess": "activated_credentials_generated_2026-10-06",
   "manualPhotoPublished": true,
@@ -68,10 +68,16 @@
   "amazonProductsPending": 11,
   "inactiveCuratedQueueProducts": 3,
   "shopeeCredentialsStored": true,
-  "apiCheckRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37541513543",
+  "apiCheckRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37687104378",
   "apiCheckStatus": "success_official_products_prices_and_photos",
   "apiCheckProducts": 3,
-  "repositoryPublic": false,
+  "repositoryPublic": true,
   "postingIntervalMinutes": 5,
-  "maxPerDay": 288
+  "maxPerDay": 288,
+  "persistenceRecovery": {
+    "messageId": 7,
+    "publicChannelVerified": true,
+    "resent": false,
+    "reason": "Mensagem publicada, git push posterior falhou; recibo reconciliado."
+  }
 }

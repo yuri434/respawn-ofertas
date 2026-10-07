@@ -1,6 +1,6 @@
 # Respawn Ofertas
 
-Atualizado em 07/10/2026. Rotina preparada para consultar a API oficial Shopee a cada cinco minutos e publicar no Telegram até um produto completo por janela, pelo GitHub Actions, com o PC desligado. Execuções agendadas só rodam se o repositório estiver público. O GitHub pode atrasar ou omitir execuções; o intervalo não é garantia de pontualidade. Sem produto completo elegível, não publica.
+Atualizado em 07/10/2026. Rotina ativada para consultar a API oficial Shopee a cada cinco minutos e publicar no Telegram até um produto completo por janela, pelo GitHub Actions, com o PC desligado. Execuções agendadas só rodam se o repositório estiver público. O GitHub pode atrasar ou omitir execuções; o intervalo não é garantia de pontualidade. Sem produto completo elegível, não publica.
 
 ## Conteúdo automático
 
@@ -12,9 +12,9 @@ Exige nota mínima 4,5, dez vendas e loja oficial/preferida segundo shopType 1/2
 
 ## Validação e histórico
 
-31 testes passaram localmente para a nova cadência; a verificação da nova implantação na nuvem fica registrada em preparacao-status.json. O modo diário anterior passou na nuvem. A consulta real autenticada retornou três produtos completos com fotos, preços e links, sem publicar: [execução #18](https://github.com/yuri434/respawn-ofertas/actions/runs/37541513543).
+35 testes passaram localmente e na nuvem, incluindo falha de salvamento depois de uma resposta válida do Telegram. A consulta real autenticada na execução #20 retornou produtos com fotos, preços e links: [verificação](https://github.com/yuri434/respawn-ofertas/actions/runs/37687104378).
 
-A primeira foto publicada pelo bot na nuvem foi o [mouse Uniwity](https://t.me/RespawnOfertasYuri/6), em 06/10 às 19:26. Veio da fila anterior, sem preço. A primeira publicação com preço da API e a primeira execução do novo cron precisam de confirmação real. Três publicações reais constam no histórico; não são reenviadas.
+O [Ryzen 7 5700X](https://t.me/RespawnOfertasYuri/7) foi publicado pela API em 07/10 às 18:14 com foto, R$ 1.429,00 e link original. A confirmação foi reconciliada após uma falha posterior de git push, sem reenviar o produto. A nova persistência tenta o mesmo commit até três vezes e mantém o recibo confirmado. A [execução #22](https://github.com/yuri434/respawn-ofertas/actions/runs/37688683392) publicou o [Samsung A17](https://t.me/RespawnOfertasYuri/8), com foto e R$ 1.239,90, e salvou o histórico automaticamente. Cinco publicações reais constam no histórico. O cron está habilitado; seu primeiro disparo está em observação. O estado detalhado está em preparacao-status.json.
 
 O bot fixa sua identidade e o canal -1003910154291, verifica autorização, persiste uma reserva antes de enviar e confirma foto/legenda após a resposta. Resposta ambígua bloqueia novos envios até conferência. Limite de uma publicação em cada janela de cinco minutos, até 288 por dia. A proteção mínima entre envios é de quatro minutos para absorver pequeno atraso do agendador; não permite dois envios na mesma janela. A fila anterior de fotos fica inativa enquanto a API estiver habilitada. Amazon continua pendente; esta descoberta automática usa Shopee.
 
