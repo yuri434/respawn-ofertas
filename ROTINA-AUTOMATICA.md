@@ -1,16 +1,13 @@
 # Rotina automática do Respawn Ofertas
 
-Desde 06/10/2026, a descoberta oficial Shopee substitui a fila fixa quando shopeeApi.enabled=true. Um post por dia, às 19:17 (America/Sao_Paulo), pelo GitHub Actions, com o PC desligado. Próximo horário esperado: 07/10/2026. A primeira execução pelo cron ainda não foi observada; o GitHub pode atrasar uma execução.
+Atualização em 07/10/2026: preparado cron */5 * * * * para consulta e até um envio a cada cinco minutos, com o PC desligado. O job agendado só executa em repositório público. GitHub pode atrasar ou omitir execuções; não é um temporizador pontual garantido. Sem produto completo elegível, não publica.
 
-Busca produtos de tecnologia/gamer e celulares em 30 categorias alternadas. Confere anúncio, foto oficial, preço, período vigente e link de afiliado, preservando o link integral. Exige avaliações, vendas e tipo de loja conforme API-SHOPEE.md. Não inventa preços, descontos, cupons, desempenho ou compatibilidade. A consulta usada não fornece cupons. Se não houver produto completo elegível, não publica.
+Alterna categorias a cada janela, consultando a API oficial Shopee até quatro vezes. Mantém foto oficial, preço, período vigente, link integral de afiliado, avaliações, vendas e tipo de loja. Não inventa cupons, descontos, compatibilidade nem desempenho. Esta API não fornece cupons. Amazon ainda não participa da descoberta automática.
 
-Publica somente no canal -1003910154291, após confirmar o próprio bot e sua permissão. Reserva persistida no GitHub antes do envio e confirmação de foto/legenda depois. Resposta ambígua bloqueia repetição. Limite diário e intervalo mínimo de quatro horas. Para pausar: cloudEnabled=false. Preserve state/history.json.
+Limite de uma publicação por janela de cinco minutos, até 288 por dia; distância mínima de quatro minutos para tolerar pequeno atraso do GitHub. O histórico bloqueia IDs e links já publicados e qualquer envio com confirmação pendente. Bot e canal são fixos e conferidos pela API Telegram antes de enviar. Reserva no GitHub antes da publicação; confirmação exata depois. O histórico preserva as publicações /3, /5 e /6.
 
-Histórico: Amazon Kingston /3, Redragon Cobra /5 e Uniwity /6. O Uniwity foi a primeira foto enviada pelo bot na nuvem em 06/10 às 19:26, a partir da fila anterior e sem preço. Os três itens restantes dessa fila ficam inativos no modo API. A primeira publicação com preço oficial aguarda o próximo horário diário. Amazon permanece fora da descoberta automática enquanto faltam dados autorizados.
+Credenciais continuam exclusivamente nos Secrets do GitHub. Nenhuma sessão ou conversa pessoal de WhatsApp/Telegram é usada. Para pausar: cloudEnabled=false. Não limpar state/history.json nem rodar outra cópia independente.
 
-Validação: 28 testes e consulta real autenticada aprovados na execução #18, com três produtos, fotos, preços e links. Nenhum produto da consulta de teste foi publicado. Nenhuma conversa pessoal ou sessão de WhatsApp foi acessada.
+31 testes locais aprovados na nova cadência. A confirmação de implantação, foto com preço e cron será registrada após testes reais.
 
-- [Canal](https://t.me/RespawnOfertasYuri)
-- [Teste da API](https://github.com/yuri434/respawn-ofertas/actions/runs/37541513543)
-- [GitHub Actions](https://github.com/yuri434/respawn-ofertas/actions/workflows/canal.yml)
-- [Agendamento GitHub](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
+[Canal](https://t.me/RespawnOfertasYuri) · [GitHub Actions](https://github.com/yuri434/respawn-ofertas/actions/workflows/canal.yml) · [Agendamento GitHub](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)

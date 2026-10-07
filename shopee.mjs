@@ -71,8 +71,7 @@ export function productFromNode(node, termIndex, now = new Date()) {
 }
 
 export async function discoverCatalog(api, history, now = new Date(), onQuery = () => {}) {
-  const day = new Intl.DateTimeFormat('sv-SE',{timeZone:'America/Sao_Paulo'}).format(now);
-  const start = Math.floor(Date.parse(day+'T00:00:00Z')/86400000) % terms.length;
+  const start = Math.floor(now.getTime()/(5*60000)) % terms.length;
   const products = [], seen = new Set(), seenLinks = new Set(Object.values(history.items).filter(i=>i.status==='publicado').map(i=>i.link));
   for (let offset=0;offset<4;offset++) {
     const index = (start+offset)%terms.length;

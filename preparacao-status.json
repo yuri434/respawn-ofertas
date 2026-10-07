@@ -3,7 +3,7 @@
   "channelName": "Respawn Ofertas",
   "platform": "telegram",
   "candidateShopeeProducts": 54,
-  "stage": "shopee_api_active",
+  "stage": "five_minute_prepared_publication_pending",
   "whatsappSessionCreated": false,
   "activeCatalogProducts": null,
   "cloudEnabled": true,
@@ -11,7 +11,7 @@
   "telegramTokenStored": true,
   "whatsappAutomation": "PAUSED",
   "tests": {
-    "passed": 28,
+    "passed": 31,
     "liveIntegrationTested": true,
     "failed": 0,
     "photoProductionTested": true,
@@ -47,18 +47,18 @@
   "publishTestRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37540529444",
   "publishTestStatus": "success_photo_caption_channel_and_history_confirmed",
   "scheduleActive": true,
-  "pendingReason": "Primeira publicação com preço da API aguarda execução diária de 07/10 às 19:17 (São Paulo).",
+  "pendingReason": "Implantar arquivos, testar na nuvem e concluir mudança para repositório público.",
   "publicationUrl": "https://t.me/RespawnOfertasYuri/6",
   "remainingProducts": null,
   "catalogMode": "shopee_api",
   "catalogValidityDays": null,
   "schedule": {
-    "cron": "17 19 * * *",
+    "cron": "*/5 * * * *",
     "timezone": "America/Sao_Paulo",
-    "nextExpected": "2026-10-07T19:17:00-03:00",
+    "nextExpected": null,
     "firstScheduledExecutionObserved": false,
     "verificationRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37540404318",
-    "verificationStatus": "configured_and_cloud_checks_passed"
+    "verificationStatus": "new_cadence_pending_cloud_check"
   },
   "shopeeApiAccess": "activated_credentials_generated_2026-10-06",
   "manualPhotoPublished": true,
@@ -70,5 +70,8 @@
   "shopeeCredentialsStored": true,
   "apiCheckRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37541513543",
   "apiCheckStatus": "success_official_products_prices_and_photos",
-  "apiCheckProducts": 3
+  "apiCheckProducts": 3,
+  "repositoryPublic": false,
+  "postingIntervalMinutes": 5,
+  "maxPerDay": 288
 }

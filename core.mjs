@@ -6,6 +6,9 @@ export { disclosure, amazonDisclosure } from './offers.mjs';
 
 export const linkHash = value => createHash('sha256').update(value).digest('hex');
 export const localDay = value => new Intl.DateTimeFormat('sv-SE', { timeZone: 'America/Sao_Paulo' }).format(new Date(value));
+export function validateFrequency(config) {
+  if (![5,60,1440].includes(config.postingIntervalMinutes) || !Number.isInteger(config.maxPerDay) || config.maxPerDay < 1 || config.maxPerDay > 1440/config.postingIntervalMinutes || !Number.isInteger(config.minIntervalMinutes) || config.minIntervalMinutes < config.postingIntervalMinutes-1 || config.minIntervalMinutes > 1440) throw new Error('Frequência inválida.');
+}
 
 export function curatedProductStatus(config, product, now = new Date()) {
   if (config.catalogMode !== 'curated') return { ready: false, reason: 'Modo de catálogo não configurado.' };
@@ -20,7 +23,8 @@ export function curatedProductStatus(config, product, now = new Date()) {
 }
 
 export function validateCatalog(config, catalog) {
-  if (config.platform !== 'telegram' || config.timezone !== 'America/Sao_Paulo' || config.maxPerDay !== 1) throw new Error('Destino ou frequência inválidos.');
+  if (config.platform !== 'telegram' || config.timezone !== 'America/Sao_Paulo') throw new Error('Destino inválido.');
+  validateFrequency(config);
   const ids = new Set(), links = new Set();
   for (const p of catalog.products) {
     if (!p.itemId || !p.title || !p.text?.includes(disclosure) || !p.text.includes(p.offerLink) || p.text.length > 4096) throw new Error('Produto incompleto.');
@@ -71,11 +75,14 @@ export function authorizeLive(config) {
 }
 
 export function chooseNext(config, catalog, history, now = new Date()) {
+  validateFrequency(config);
   const pending = Object.entries(history.items).find(([, p]) => ['enviando', 'confirmacao_pendente'].includes(p.status));
   if (pending) return { blocked: true, pendingId: pending[0], reason: 'Envio anterior pendente; conferir o próprio canal sem reenviar.' };
   const posted = Object.values(history.items).filter(p => p.status === 'publicado');
-  if (posted.some(p => localDay(p.confirmedAt) === localDay(now))) return { blocked: true, reason: 'Limite diário atingido.' };
-  if (posted.some(p => new Date(now) - Date.parse(p.confirmedAt) < 4 * 3600000)) return { blocked: true, reason: 'Aguardar intervalo de quatro horas.' };
+  if (posted.filter(p => localDay(p.confirmedAt) === localDay(now)).length >= config.maxPerDay) return { blocked: true, reason: 'Limite diário atingido.' };
+  const slot = value => Math.floor(new Date(value).getTime() / (config.postingIntervalMinutes * 60000));
+  if (posted.some(p => slot(p.confirmedAt) === slot(now))) return { blocked: true, reason: 'Uma publicação nesta janela de ' + config.postingIntervalMinutes + ' minutos já foi enviada.' };
+  if (posted.some(p => new Date(now) - Date.parse(p.confirmedAt) < config.minIntervalMinutes * 60000)) return { blocked: true, reason: 'Aguardar intervalo mínimo de ' + config.minIntervalMinutes + ' minutos.' };
   const product = catalog.products.find(p => !history.items[p.itemId] || (history.items[p.itemId].status === 'adiado' && new Date(now) - Date.parse(history.items[p.itemId].at) >= 86400000));
   return { blocked: false, product: product ?? null };
 }

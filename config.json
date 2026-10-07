@@ -12,7 +12,7 @@
     "username": "RespawnOfertas_bot"
   },
   "timezone": "America/Sao_Paulo",
-  "maxPerDay": 1,
+  "maxPerDay": 288,
   "maxCandidates": 3,
   "cloudEnabled": true,
   "botAccessApproved": true,
@@ -23,5 +23,7 @@
     "enabled": true,
     "credentialsLocation": "GitHub Actions Secrets",
     "requiresLiveCheck": true
-  }
+  },
+  "postingIntervalMinutes": 5,
+  "minIntervalMinutes": 4
 }

@@ -35,7 +35,7 @@ async function persist() {
 if (mode === 'check') {
   if (config.shopeeApi?.enabled === true) {
     const gates = chooseNext(config,{products:[]},history);
-    console.log(JSON.stringify({platform:'telegram',catalogMode:'shopee_api',enabled:config.cloudEnabled,maxPerDay:config.maxPerDay,blockedReason:gates.reason??null,sourceCheck:'Use api_check para consultar dados atuais sem publicar.',livePublication:false},null,2));
+    console.log(JSON.stringify({platform:'telegram',catalogMode:'shopee_api',enabled:config.cloudEnabled,maxPerDay:config.maxPerDay,postingIntervalMinutes:config.postingIntervalMinutes,minIntervalMinutes:config.minIntervalMinutes,blockedReason:gates.reason??null,sourceCheck:'Use api_check para consultar dados atuais sem publicar.',livePublication:false},null,2));
     process.exit(0);
   }
   if (config.catalogMode === 'curated_photo') for (const product of catalog.products) await checkedPhotoBytes(product.photo);
