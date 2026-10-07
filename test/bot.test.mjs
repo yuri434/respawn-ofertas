@@ -65,6 +65,17 @@ test('resposta perdida não causa repetição', async () => {
   assert.equal((await publishOnce(args)).published, false);
   assert.equal(sends, 1);
 });
+test('falha ao salvar recibo confirmado não muda confirmação nem reenvia', async () => {
+  const c=live(), history={items:{}}; let saves=0, sends=0;
+  await assert.rejects(publishOnce({config:c,catalog,history,provider:provider(c,async text=>{sends++;return receipt(c,text);}),persist:async()=>{if(++saves===2)throw new Error('Git indisponível');}}));
+  assert.equal(sends,1);
+  assert.equal(saves,2);
+  assert.equal(history.items[catalog.products[0].itemId].status,'publicado');
+  assert.equal(history.items[catalog.products[0].itemId].messageId,123);
+  await publishOnce({config:c,catalog,history,provider:provider(c,async()=>sends++),persist:async()=>{}});
+  assert.equal(sends,1);
+});
+
 test('resposta de outro canal não confirma', async () => {
   const c = live(), history = { items: {} };
   await assert.rejects(publishOnce({ config: c, catalog, history, provider: provider(c, async text => ({ ...receipt(c, text), chat: { id: 55, type: 'private' } })), persist: async () => {} }));
