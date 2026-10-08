@@ -102,12 +102,16 @@
       "url": "https://t.me/RespawnOfertasYuri/10"
     },
     "shopee:22199521636": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-08T07:32:59.347Z",
       "text": "🎮 Smartphone Xiaomi POCO C85 256GB 8GB Global Version Original Sealed, 6.9\" LCD Screen\n\n💰 Valor: R$ 1.057,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/8V9XfUFNRN\n\nConferido em 08/10/2026, 04:32 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/8V9XfUFNRN",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-08T07:32:59.347Z",
+      "messageId": 11,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/11"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
