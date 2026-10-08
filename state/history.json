@@ -162,12 +162,16 @@
       "url": "https://t.me/RespawnOfertasYuri/15"
     },
     "shopee:19197228966": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-08T23:15:19.587Z",
       "text": "🎮 Controle De Xbox 360 Com Fio Para Video Game 1,9 metro\n\n💰 Valor: R$ 46,99\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/2VsLZAsLUV\n\nConferido em 08/10/2026, 20:15 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/2VsLZAsLUV",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-08T23:15:19.587Z",
+      "messageId": 16,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/16"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
