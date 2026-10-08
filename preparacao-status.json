@@ -3,11 +3,11 @@
   "channelName": "Respawn Ofertas",
   "platform": "telegram",
   "candidateShopeeProducts": 54,
-  "stage": "external_scheduler_active_waiting_automatic_cadence",
+  "stage": "external_five_minute_scheduler_verified_automatic_publication",
   "whatsappSessionCreated": false,
   "activeCatalogProducts": null,
   "cloudEnabled": true,
-  "postsPublished": 11,
+  "postsPublished": 12,
   "telegramTokenStored": true,
   "whatsappAutomation": "PAUSED",
   "tests": {
@@ -47,8 +47,8 @@
   "publishTestRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37688683392",
   "publishTestStatus": "success_photo_price_and_history_saved",
   "scheduleActive": false,
-  "pendingReason": "Teste externo HTTP 200, execucao GitHub concluida e post /14 confirmado. Agendador ativo; verificar os disparos automaticos previstos para 20:05 e 20:10.",
-  "publicationUrl": "https://t.me/RespawnOfertasYuri/14",
+  "pendingReason": null,
+  "publicationUrl": "https://t.me/RespawnOfertasYuri/15",
   "remainingProducts": null,
   "catalogMode": "shopee_api",
   "catalogValidityDays": null,
@@ -100,6 +100,32 @@
     "testRunUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37857034864",
     "testPublicationUrl": "https://t.me/RespawnOfertasYuri/14",
     "credentialExpiresAt": "2027-01-06T23:00:37Z",
-    "automaticRunsObserved": []
+    "automaticRunsObserved": [
+      {
+        "scheduledAt": "2026-10-08T23:05:00Z",
+        "executedAt": "2026-10-08T23:05:06Z",
+        "jitterSeconds": 6.49,
+        "httpStatus": 200,
+        "runUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37857408839",
+        "status": "success",
+        "published": false,
+        "reason": "Aguardar intervalo mínimo de 4 minutos desde o post de teste /14 confirmado às 23:01:27.943Z."
+      },
+      {
+        "scheduledAt": "2026-10-08T23:10:00Z",
+        "executedAt": "2026-10-08T23:10:08Z",
+        "jitterSeconds": 8.77,
+        "httpStatus": 200,
+        "runUrl": "https://github.com/yuri434/respawn-ofertas/actions/runs/37857893878",
+        "status": "success",
+        "published": true,
+        "publicationUrl": "https://t.me/RespawnOfertasYuri/15",
+        "confirmedAt": "2026-10-08T23:10:21.919Z"
+      }
+    ],
+    "cadenceVerified": true,
+    "observedTriggerIntervalSeconds": 302.28,
+    "cadenceVerificationScope": "Dois disparos automaticos consecutivos com HTTP 200 e execucoes GitHub concluidas; primeiro envio suprimido por intervalo minimo apos teste, segundo envio /15 confirmado e persistido.",
+    "historyUrl": "https://console.cron-job.org/jobs/8608337/history"
   }
 }

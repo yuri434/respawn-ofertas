@@ -17,3 +17,5 @@ Para pausar o agendador: cron-job.org → job 8608337 → desmarcar Enable job �
 35 testes aprovados na nuvem na execução de teste. A descoberta e o envio continuam usando os módulos existentes; a mudança de agendamento não altera filtros ou conteúdo.
 
 [Canal](https://t.me/RespawnOfertasYuri) · [GitHub Actions](https://github.com/yuri434/respawn-ofertas/actions/workflows/canal.yml) · [cron-job.org](https://console.cron-job.org/jobs/8608337)
+
+Verificação automática em 08/10: o cron-job.org executou às 20:05:06 (jitter 6,49 s) e 20:10:08 (jitter 8,77 s), com HTTP 200 nos dois. A primeira execução respeitou o intervalo mínimo após o teste /14. A segunda publicou o Nintendo Switch 2 no post /15 às 20:10:21 e persistiu a confirmação. Intervalo real dos acionamentos: 302,28 s. Essa amostra confirma a configuração em operação, sem garantir pontualidade permanente ou publicação quando não houver oferta elegível.
