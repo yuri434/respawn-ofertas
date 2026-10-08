@@ -1,3 +1,3 @@
 # Respawn Ofertas
 
-Consulte README.md e ROTINA-AUTOMATICA.md para o estado atual. API oficial Shopee, fotos, preços e links completos. Amazon permanece pendente. A cadência de cinco minutos está ativada em repositório público. O GitHub pode atrasar execuções. Foto e preço da API já foram publicados no canal. As credenciais são cadastradas somente nos Secrets do GitHub.
+Consulte README.md e ROTINA-AUTOMATICA.md para o estado atual. API oficial Shopee, fotos, preços e links completos. Amazon permanece pendente. O cron-job.org aciona o GitHub a cada cinco minutos, com o PC desligado. A fila de runners ainda pode atrasar e uma publicação depende de produto completo elegível. Shopee e Telegram usam GitHub Secrets; o token limitado de acionamento fica no cron-job.org. Nenhuma credencial deve entrar no código ou nos logs.
