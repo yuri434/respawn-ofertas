@@ -462,12 +462,16 @@
       "url": "https://t.me/RespawnOfertasYuri/40"
     },
     "shopee:58252147093": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T01:20:19.196Z",
       "text": "🎮 Monitor Gamer Mancer Horizon Z2S, 21.5 Pol, VA, FHD, 1ms, 100Hz, HDMI/VGA, MCR-HZN21S-BL3\n\n💰 Valor: R$ 449,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/1VzoVv9y7n\n\nConferido em 08/10/2026, 22:20 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/1VzoVv9y7n",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T01:20:19.196Z",
+      "messageId": 41,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/41"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
