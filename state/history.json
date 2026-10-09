@@ -2586,12 +2586,16 @@
       "url": "https://t.me/RespawnOfertasYuri/218"
     },
     "shopee:58209212927": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T21:50:20.546Z",
       "text": "🎮 Smartphone Edge 70 Fusion 6.8 256GB 5G Motorola\n\n💰 Valor: R$ 2.498,88\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/4VdQtDsUNG\n\nConferido em 09/10/2026, 18:50 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/4VdQtDsUNG",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T21:50:20.546Z",
+      "messageId": 219,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/219"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
