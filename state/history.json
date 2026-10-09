@@ -606,12 +606,16 @@
       "url": "https://t.me/RespawnOfertasYuri/52"
     },
     "shopee:22093976534": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T02:20:22.303Z",
       "text": "🎮 Gabinete Gamer TGT Jester V2 Rainbow Mini-Tower Lateral de Acrilico c/2 Fans, Preto TGT-JSRV2-BKGF02\n\n💰 Valor: R$ 99,52\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/4B0ZadnPQ9\n\nConferido em 08/10/2026, 23:20 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/4B0ZadnPQ9",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T02:20:22.303Z",
+      "messageId": 53,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/53"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
