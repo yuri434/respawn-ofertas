@@ -858,12 +858,16 @@
       "url": "https://t.me/RespawnOfertasYuri/73"
     },
     "shopee:50565369356": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T04:05:17.008Z",
       "text": "🎮 Grip Silicone Analógico PS5 PS4 Xbox Series One 360 Switch Wii Diversas Cores Kit 4 8 16 32 Un\n\n💰 Valor: R$ 11,99\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/60SDtDgK1J\n\nConferido em 09/10/2026, 01:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/60SDtDgK1J",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T04:05:17.008Z",
+      "messageId": 74,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/74"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
