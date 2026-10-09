@@ -1674,12 +1674,16 @@
       "url": "https://t.me/RespawnOfertasYuri/141"
     },
     "shopee:22794147257": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T09:55:20.417Z",
       "text": "🎮 Headset Fone De Ouvido Gamer Com Microfone P2 Para PC Computador Headphone Videogame Celular\n\n💰 Valor: R$ 49,99\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/2gBloE2IrS\n\nConferido em 09/10/2026, 06:55 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/2gBloE2IrS",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T09:55:20.417Z",
+      "messageId": 142,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/142"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
