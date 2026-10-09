@@ -1566,12 +1566,16 @@
       "url": "https://t.me/RespawnOfertasYuri/132"
     },
     "shopee:58215579449": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T09:10:23.733Z",
       "text": "🎮 Console Nintendo Switch OLED + Super Mario Bros + 3 Meses NSO\n\n💰 Valor: R$ 2.199,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/3g4IwyerCB\n\nConferido em 09/10/2026, 06:10 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/3g4IwyerCB",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T09:10:23.733Z",
+      "messageId": 133,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/133"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
