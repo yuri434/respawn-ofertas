@@ -1806,12 +1806,16 @@
       "url": "https://t.me/RespawnOfertasYuri/152"
     },
     "shopee:58206666493": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T11:15:20.640Z",
       "text": "🎮 Monitor Gamer Pichau Athen V3S, 27 Pol, IPS, FHD, 1ms, 100Hz, HDMI/VGA, PG-ATH27V3S-BL02\n\n💰 Valor: R$ 636,03\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/8fSz35igaN\n\nConferido em 09/10/2026, 08:15 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/8fSz35igaN",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T11:15:20.640Z",
+      "messageId": 153,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/153"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
