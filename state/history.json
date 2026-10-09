@@ -748,6 +748,14 @@
       "messageId": 64,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/64"
+    },
+    "shopee:22799420547": {
+      "status": "enviando",
+      "at": "2026-10-09T03:20:22.569Z",
+      "text": "🎮 Smartphone Samsung Galaxy A17 4G 6.7 128GB 4GB Câmera Tripla\n\n💰 Valor: R$ 959,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/3g4IOm8U05\n\nConferido em 09/10/2026, 00:20 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/3g4IOm8U05",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
