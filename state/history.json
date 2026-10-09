@@ -690,12 +690,16 @@
       "url": "https://t.me/RespawnOfertasYuri/59"
     },
     "shopee:58254652098": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T02:55:18.817Z",
       "text": "🎮 Mouse Gamer Laser 3200dpi 1400dpi Led Rgb Usb 7 Botões Fio USB 7D Extreme 7 Cores Profissional Original\n\n💰 Valor: R$ 17,99\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/8Kq8aMLVX0\n\nConferido em 08/10/2026, 23:55 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/8Kq8aMLVX0",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T02:55:18.817Z",
+      "messageId": 60,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/60"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
