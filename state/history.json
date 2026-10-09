@@ -546,12 +546,16 @@
       "url": "https://t.me/RespawnOfertasYuri/47"
     },
     "shopee:19498104885": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T01:55:18.633Z",
       "text": "🎮 SSD Kingston NV3 500GB M.2 NVMe PCIe – Alta Velocidade e Desempenho\n\n💰 Valor: R$ 734,54\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/9V25uNnwXQ\n\nConferido em 08/10/2026, 22:55 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/9V25uNnwXQ",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T01:55:18.633Z",
+      "messageId": 48,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/48"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
