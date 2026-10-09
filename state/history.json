@@ -2286,12 +2286,16 @@
       "url": "https://t.me/RespawnOfertasYuri/193"
     },
     "shopee:19699863304": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T18:00:32.311Z",
       "text": "🎮 Gabinete Gamer Aigo Darkflash Durin D275M, Rainbow, Mid-Tower,L.Vidro, 3Fans, Preto, DC-D275M-B-BR2\n\n💰 Valor: R$ 168,41\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/3B82OnrDS7\n\nConferido em 09/10/2026, 15:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/3B82OnrDS7",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T18:00:32.311Z",
+      "messageId": 194,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/194"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
