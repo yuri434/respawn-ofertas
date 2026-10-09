@@ -1494,12 +1494,16 @@
       "url": "https://t.me/RespawnOfertasYuri/126"
     },
     "shopee:58259930471": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T08:40:24.242Z",
       "text": "🎮 Monitor Gamer TGT Altay TS6, 23.8 Pol, IPS, FHD, 1ms, 180Hz, HDMI/VGA, TGT-ATTS6-BL02\n\n💰 Valor: R$ 542,51\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/8V9YqmjJvE\n\nConferido em 09/10/2026, 05:40 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/8V9YqmjJvE",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T08:40:24.242Z",
+      "messageId": 127,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/127"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
