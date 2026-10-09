@@ -1480,6 +1480,14 @@
       "messageId": 125,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/125"
+    },
+    "shopee:22894954205": {
+      "status": "enviando",
+      "at": "2026-10-09T08:35:20.235Z",
+      "text": "🎮 Monitor LG Gamer 24\" 100Hz 5ms Full HD - 24MS500-B\n\n💰 Valor: R$ 699,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/2BFVJ97Qlz\n\nConferido em 09/10/2026, 05:35 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/2BFVJ97Qlz",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
