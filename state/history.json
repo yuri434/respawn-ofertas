@@ -1696,6 +1696,14 @@
       "messageId": 143,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/143"
+    },
+    "shopee:29078570348": {
+      "status": "enviando",
+      "at": "2026-10-09T10:05:20.941Z",
+      "text": "🎮 NVIDIA GEFORCE GT 730 745 QUADRO K600 K620 NVS 510 Dell AMD Radeon R5 R7 RX 430 340X 240 HD7470 HD8490 1GB 2GB 4GB GDDR5\n\n💰 Valor: R$ 79,55\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/LnrCvQTlm\n\nConferido em 09/10/2026, 07:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/LnrCvQTlm",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
