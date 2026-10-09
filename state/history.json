@@ -2092,6 +2092,14 @@
       "messageId": 177,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/177"
+    },
+    "shopee:22898984823": {
+      "status": "enviando",
+      "at": "2026-10-09T15:35:18.869Z",
+      "text": "🎮 Gabinete Gamer Mancer CV450, Mini-Tower, Lateral de Vidro, Preto, MCR-CV450-BK\n\n💰 Valor: R$ 206,90\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/2gBlnst7Sy\n\nConferido em 09/10/2026, 12:35 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/2gBlnst7Sy",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
