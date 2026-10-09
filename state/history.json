@@ -2478,12 +2478,16 @@
       "url": "https://t.me/RespawnOfertasYuri/209"
     },
     "shopee:22698676055": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T19:55:21.948Z",
       "text": "🎮 Cadeira Gamer Escritório Arcalli ARC-Racing Ergonômica Profissional Reclinável Apoio para Pernas Design Premium\n\n💰 Valor: R$ 418,58\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/qk7j2HQgf\n\nConferido em 09/10/2026, 16:55 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/qk7j2HQgf",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T19:55:21.948Z",
+      "messageId": 210,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/210"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
