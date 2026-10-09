@@ -1458,12 +1458,16 @@
       "url": "https://t.me/RespawnOfertasYuri/123"
     },
     "shopee:23199140093": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T08:25:21.991Z",
       "text": "🎮 Smartphone Motorola Moto g86 5G - 256GB, 8GB RAM + 16GB Ram Boost 50MP Sony camera OIS Moto AI\n\n💰 Valor: R$ 2.221,11\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/BUQtkjH3v\n\nConferido em 09/10/2026, 05:25 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/BUQtkjH3v",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T08:25:21.991Z",
+      "messageId": 124,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/124"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
