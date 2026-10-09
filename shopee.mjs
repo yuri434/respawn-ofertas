@@ -3,8 +3,11 @@ import { offerCaption, offerStatus } from './offers.mjs';
 
 export const endpoint = 'https://open-api.affiliate.shopee.com.br/graphql';
 export const terms = ['processador ryzen', 'processador intel', 'placa de video', 'memoria ddr4', 'memoria ddr5', 'mouse gamer', 'teclado gamer', 'mousepad gamer', 'jogo ps5', 'cooler processador', 'smartphone samsung', 'smartphone motorola', 'smartphone xiaomi', 'iphone', 'notebook gamer', 'pc gamer', 'monitor gamer', 'cadeira gamer', 'console ps5', 'console xbox', 'nintendo switch', 'jogo xbox', 'jogo nintendo switch', 'ssd nvme', 'headset gamer', 'controle gamer', 'placa mae', 'fonte pc', 'gabinete gamer', 'microfone gamer'];
+terms.push('ssd sata');
 const clean = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 const matchers = [/\bryzen\b/, /\bintel\b.*\b(i[3579]|core)\b|\bcore\b.*\bintel\b/, /\b(rtx|gtx|radeon|rx\s*\d|arc\s*[ab]\d)/, /\bddr4\b/, /\bddr5\b/, /\bmouse\b/, /\bteclado\b/, /\bmouse\s*pad\b|\bmousepad\b/, /\b(jogo|game)\b.*\bps5\b|\bps5\b.*\b(jogo|game)\b/, /\bcooler\b/, /\bsamsung\b/, /\bmotorola\b|\bmoto\b/, /\bxiaomi\b|\bredmi\b|\bpoco\b/, /\biphone\s*\d/, /\b(notebook|laptop)\b/, /\b(pc|computador|desktop)\b/, /\bmonitor\b/, /\bcadeira\b/, /\b(ps5|playstation 5)\b/, /\bxbox\b/, /\bnintendo\b.*\bswitch\b/, /\b(jogo|game)\b.*\bxbox\b|\bxbox\b.*\b(jogo|game)\b/, /\b(jogo|game)\b.*\bswitch\b|\bswitch\b.*\b(jogo|game)\b/, /\b(ssd|nvme)\b/, /\b(headset|fone)\b/, /\b(controle|joystick|gamepad)\b/, /\bplaca\s*mae\b/, /\bfonte\b/, /\bgabinete\b/, /\bmicrofone\b/];
+matchers.push(/\bssd\b.*\bsata\b|\bsata\b.*\bssd\b/);
+const sataBrands = /\b(kingston|crucial|sandisk|samsung|adata|xpg|lexar|pny|corsair|seagate|teamgroup|wd)\b|western digital|team group/;
 const reject = /\b(defeito|quebrad[oa]s?|usad[oa]s?|segunda mao|recondicionad[oa]s?|seminov[oa]s?|caixa vazia|somente caixa|miniatura|chaveiro|skin|adesivo|suporte|capa|case|reparo|pelicula|bateria|carregador|touch|display|adaptador|conversor|organizador)\b/;
 export function brlCents(value) {
   if (!/^\d{1,8}(\.\d{1,2})?$/.test(String(value))) return null;
@@ -27,7 +30,8 @@ export function createShopee(appId, secret, fetchImpl = fetch, clock = () => new
   return {
     async search(keyword) {
       if (!terms.includes(keyword)) throw new Error('Busca fora das categorias autorizadas.');
-      const payload = JSON.stringify({ query: `{productOfferV2(keyword:${JSON.stringify(keyword)},sortType:2,page:1,limit:20){nodes{itemId shopId productName imageUrl productLink offerLink priceMin priceMax ratingStar sales shopType periodStartTime periodEndTime} pageInfo{hasNextPage}}}` });
+      const sortType = ['ssd sata', 'ssd nvme'].includes(keyword) ? 4 : 2;
+      const payload = JSON.stringify({ query: `{productOfferV2(keyword:${JSON.stringify(keyword)},sortType:${sortType},page:1,limit:20){nodes{itemId shopId productName imageUrl productLink offerLink priceMin priceMax ratingStar sales shopType periodStartTime periodEndTime} pageInfo{hasNextPage}}}` });
       const timestamp = String(Math.floor(clock().getTime() / 1000));
       let response, data;
       try {
@@ -47,6 +51,8 @@ export function createShopee(appId, secret, fetchImpl = fetch, clock = () => new
 export function productFromNode(node, termIndex, now = new Date()) {
   const title = typeof node.productName === 'string' ? node.productName.trim() : '';
   if (!title || title.length > 200 || /[\n\r\u0000-\u001f]/.test(title) || !matchers[termIndex]?.test(clean(title)) || reject.test(clean(title))) return null;
+  if (terms[termIndex]?.startsWith('ssd ') && /\b(cabos?|conectores?)\b/.test(clean(title))) return null;
+  if (terms[termIndex] === 'ssd sata' && (!sataBrands.test(clean(title)) || /\b(nvme|pcie|pci-e)\b/.test(clean(title)))) return null;
   if (termIndex >= 10 && termIndex <= 12 && !/\b(smartphone|celular|telefone)\b/.test(clean(title))) return null;
   if ([18,19,20].includes(termIndex) && /\b(jogo|game|controle|joystick|acessorio|cabo)\b/.test(clean(title))) return null;
   const rating = Number(node.ratingStar);
