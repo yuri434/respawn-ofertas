@@ -510,12 +510,16 @@
       "url": "https://t.me/RespawnOfertasYuri/44"
     },
     "shopee:57410081742": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T01:40:20.985Z",
       "text": "🎮 Gamesir T4 Nova Lite Controlador Sem Fio Bluetooth Com Efeito Hall Para Nintendo Switch PC Steam Android iOS\n\n💰 Valor: R$ 97,99\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/7VH1W1QGPn\n\nConferido em 08/10/2026, 22:40 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/7VH1W1QGPn",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T01:40:20.985Z",
+      "messageId": 45,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/45"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
