@@ -1350,12 +1350,16 @@
       "url": "https://t.me/RespawnOfertasYuri/114"
     },
     "shopee:22899341907": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T07:35:17.689Z",
       "text": "🎮 Placa de Video PowerColor Radeon RX 9060 XT Reaper, 16GB, GDDR6, 128-bit, RX9060XT-16G-A\n\n💰 Valor: R$ 4.021,73\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/4LJzoK0yQN\n\nConferido em 09/10/2026, 04:35 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/4LJzoK0yQN",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T07:35:17.689Z",
+      "messageId": 115,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/115"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
