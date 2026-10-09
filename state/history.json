@@ -1002,12 +1002,16 @@
       "url": "https://t.me/RespawnOfertasYuri/85"
     },
     "shopee:48510124800": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T05:10:19.236Z",
       "text": "🎮 GTX 550Ti 4GB GDDR5 Placa Gráfica De Computador Placas De Vídeo Para Jogos PCI-Express 2.0 De Jogo Separada\n\n💰 Valor: R$ 223,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/gQhRaEvrZ\n\nConferido em 09/10/2026, 02:10 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/gQhRaEvrZ",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T05:10:19.236Z",
+      "messageId": 86,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/86"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
