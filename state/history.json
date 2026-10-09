@@ -2178,12 +2178,16 @@
       "url": "https://t.me/RespawnOfertasYuri/184"
     },
     "shopee:23499410278": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T16:35:18.986Z",
       "text": "🎮 Smartphone Samsung Galaxy A17 4G 6.7 256GB 8GB Câmera Tripla\n\n💰 Valor: R$ 2.197,90\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/4LK0jL7BrZ\n\nConferido em 09/10/2026, 13:35 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/4LK0jL7BrZ",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T16:35:18.986Z",
+      "messageId": 185,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/185"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
