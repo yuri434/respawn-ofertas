@@ -1410,12 +1410,16 @@
       "url": "https://t.me/RespawnOfertasYuri/119"
     },
     "shopee:19198038114": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T08:05:17.271Z",
       "text": "🎮 Cpu Cooler Processador 1200 1366 1700 2011 1150 1151 1155 FM2+/AM3+ Fan Duplo Rgb Intel/amd\n\n💰 Valor: R$ 69,90\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/9pewYn0Nqy\n\nConferido em 09/10/2026, 05:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/9pewYn0Nqy",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T08:05:17.271Z",
+      "messageId": 120,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/120"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
