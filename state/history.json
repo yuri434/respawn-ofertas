@@ -1230,12 +1230,16 @@
       "url": "https://t.me/RespawnOfertasYuri/104"
     },
     "shopee:41165421078": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T06:45:20.175Z",
       "text": "🎮 ACASIS 10Gbps M.2 NVMe SSD Enclosure USB C Estação de Conexão Magnética Compatível com iPhone15-18 ProRes\n\n💰 Valor: R$ 230,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/9fLW6gnJCV\n\nConferido em 09/10/2026, 03:45 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/9fLW6gnJCV",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T06:45:20.175Z",
+      "messageId": 105,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/105"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
