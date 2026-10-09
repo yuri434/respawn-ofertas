@@ -1098,12 +1098,16 @@
       "url": "https://t.me/RespawnOfertasYuri/93"
     },
     "shopee:58257166621": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T05:50:23.654Z",
       "text": "🎮 Smartphone Samsung Galaxy A07 6.7 128GB 4GB Câmera Dupla\n\n💰 Valor: R$ 939,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/4fwqaHr9Pr\n\nConferido em 09/10/2026, 02:50 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/4fwqaHr9Pr",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T05:50:23.654Z",
+      "messageId": 94,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/94"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
