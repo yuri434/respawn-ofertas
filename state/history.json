@@ -1770,12 +1770,16 @@
       "url": "https://t.me/RespawnOfertasYuri/149"
     },
     "shopee:53200239950": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T11:00:27.853Z",
       "text": "🎮 Smartphone Xiaomi Redmi 15C 4GB + 128GB – Tela 6.9\" Dual SIM LTE, Desempenho e Estilo Moderno\n\n💰 Valor: R$ 997,56\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/1LgOIFj94W\n\nConferido em 09/10/2026, 08:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/1LgOIFj94W",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T11:00:27.853Z",
+      "messageId": 150,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/150"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
