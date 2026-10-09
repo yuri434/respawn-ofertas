@@ -306,12 +306,16 @@
       "url": "https://t.me/RespawnOfertasYuri/27"
     },
     "shopee:22198558430": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T00:15:21.111Z",
       "text": "🎮 Memória RAM Para Notebook DDR4 8gb 3200Mhz  Kingston Sodimm Preto\n\n💰 Valor: R$ 388,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/6L54CLFbZV\n\nConferido em 08/10/2026, 21:15 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/6L54CLFbZV",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T00:15:21.111Z",
+      "messageId": 28,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/28"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
