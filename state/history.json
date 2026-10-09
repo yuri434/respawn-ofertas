@@ -1878,12 +1878,16 @@
       "url": "https://t.me/RespawnOfertasYuri/158"
     },
     "shopee:22394724280": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T12:00:34.596Z",
       "text": "🎮 Fonte ATX Knup KP-517 200W Real Bivolt Silenciosa para PC com Conexão SATA\n\n💰 Valor: R$ 49,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/7KxbM7JVVb\n\nConferido em 09/10/2026, 09:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/7KxbM7JVVb",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T12:00:34.596Z",
+      "messageId": 159,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/159"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
