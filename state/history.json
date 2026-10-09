@@ -522,12 +522,16 @@
       "url": "https://t.me/RespawnOfertasYuri/45"
     },
     "shopee:8172308633": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T01:45:23.297Z",
       "text": "🎮 Controle De Xbox 360 Com Fio Para Video Game e PC/ Fat E Pc Joystick Jogo JorgeStore\n\n💰 Valor: R$ 43,99\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/4fwq99k668\n\nConferido em 08/10/2026, 22:45 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/4fwq99k668",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T01:45:23.297Z",
+      "messageId": 46,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/46"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
