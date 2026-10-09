@@ -1194,12 +1194,16 @@
       "url": "https://t.me/RespawnOfertasYuri/101"
     },
     "shopee:11171002377": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T06:30:24.646Z",
       "text": "🎮 Kit 4 Pares Grip Botão 8 unidades de Silicone Ps3 Ps4 Ps5 Xbox Wii - Ótima Qualidade, Pronta Entrega\n\n💰 Valor: R$ 11,50\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/5q8ngugxMM\n\nConferido em 09/10/2026, 03:30 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/5q8ngugxMM",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T06:30:24.646Z",
+      "messageId": 102,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/102"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
