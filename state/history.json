@@ -438,12 +438,16 @@
       "url": "https://t.me/RespawnOfertasYuri/38"
     },
     "shopee:23494830107": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T01:10:19.808Z",
       "text": "🎮 Mesa de Escritório Industrial 120cm Escrivaninha Home Office Estudo PC Notebook\n\n💰 Valor: R$ 185,89\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/5At6rcr46E\n\nConferido em 08/10/2026, 22:10 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/5At6rcr46E",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T01:10:19.808Z",
+      "messageId": 39,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/39"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
