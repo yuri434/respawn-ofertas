@@ -1938,12 +1938,16 @@
       "url": "https://t.me/RespawnOfertasYuri/163"
     },
     "shopee:58265892092": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T13:53:32.470Z",
       "text": "🎮 PC Gamer Forge, Intel Core i5, 16GB DE RAM, SSD 240GB, Completo com Monitor + Periféricos\n\n💰 Valor: R$ 1.301,91\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/9V262cfVta\n\nConferido em 09/10/2026, 10:53 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/9V262cfVta",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T13:53:32.470Z",
+      "messageId": 165,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/165"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
