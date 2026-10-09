@@ -2332,6 +2332,14 @@
       "messageId": 197,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/197"
+    },
+    "shopee:22198979880": {
+      "status": "enviando",
+      "at": "2026-10-09T18:20:22.741Z",
+      "text": "🎮 Headset Gamer RGB Sem Fio Wireless 2.4GHz Bluetooth 5.3 Wired USB -C Microfone Para PS5 PC e Celular\n\n💰 Valor: R$ 194,12\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/2qVC0X1fWV\n\nConferido em 09/10/2026, 15:20 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/2qVC0X1fWV",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
