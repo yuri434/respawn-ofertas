@@ -48,3 +48,24 @@ test('produto oficial envia foto, mantém rastreamento e respeita reserva persis
   const args={config:c,catalog,history,provider,persist:async()=>{reserved=history.items[p.itemId]?.status==='enviando';},now};
   assert.equal((await publishOnce(args)).published,true);assert.equal((await publishOnce(args)).published,false);assert.equal(sends,1);
 });
+
+test('SSD SATA busca menor preço e rejeita interfaces e marcas fora do recorte', async () => {
+  const calls = [];
+  const api = createShopee('123456', 'FAKE_TEST_SECRET', async (url, opts) => {
+    calls.push(JSON.parse(opts.body).query);
+    return {ok:true,status:200,json:async()=>({data:{productOfferV2:{nodes:[]}}})};
+  }, () => now);
+  await api.search('ssd sata'); await api.search('ssd nvme'); await api.search('mouse gamer');
+  assert.match(calls[0], /keyword:"ssd sata",sortType:4/);
+  assert.match(calls[1], /keyword:"ssd nvme",sortType:4/);
+  assert.match(calls[2], /keyword:"mouse gamer",sortType:2/);
+  const index = terms.indexOf('ssd sata'); assert.ok(index >= 0);
+  for (const title of ['SSD SATA Kingston A400 480GB 2.5', 'SSD Crucial BX500 SATA 1TB', 'SSD SATA Samsung 870 EVO 500GB']) {
+    const p = productFromNode({...node(), productName:title}, index, now);
+    assert.ok(p, title); assert.equal(p.offerLink, node().offerLink);
+    assert.equal(p.offer.coupon, null); assert.match(p.text, /varia conforme a opção/);
+  }
+  for (const title of ['Cabo SATA Kingston SSD', 'SSD Kingston NVMe SATA', 'SSD SATA marca desconhecida', 'SSD SATA Samsung usado']) {
+    assert.equal(productFromNode({...node(),productName:title},index,now),null,title);
+  }
+});
