@@ -352,6 +352,14 @@
       "messageId": 31,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/31"
+    },
+    "shopee:22393975400": {
+      "status": "enviando",
+      "at": "2026-10-09T00:35:22.290Z",
+      "text": "🎮 MousePad Grande Rosa Desk Pad Couro Gamer Office\n\n💰 Valor: R$ 20,89\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/5fpNPSVewE\n\nConferido em 08/10/2026, 21:35 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/5fpNPSVewE",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
