@@ -642,12 +642,16 @@
       "url": "https://t.me/RespawnOfertasYuri/55"
     },
     "shopee:21999855567": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T02:35:17.191Z",
       "text": "🎮 Processador Intel Core i5-3570 3.4GHz - Desempenho Potente para PC Gamer ou Escritório!\n\n💰 Valor: R$ 126,90\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/20w51gnTJN\n\nConferido em 08/10/2026, 23:35 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/20w51gnTJN",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T02:35:17.191Z",
+      "messageId": 56,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/56"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
