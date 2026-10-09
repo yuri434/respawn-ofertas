@@ -2022,12 +2022,16 @@
       "url": "https://t.me/RespawnOfertasYuri/171"
     },
     "shopee:42879200421": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T14:30:28.858Z",
       "text": "🎮 Cabo HDMI 2.1 8K 60Hz 4K 120Hz Ultra HD 48Gbps  Blindado Para PS5 Xbox Series X Monitor Gamer PC TV It-Blue\n\n💰 Valor: R$ 25,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/4B0aVzKseg\n\nConferido em 09/10/2026, 11:30 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/4B0aVzKseg",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T14:30:28.858Z",
+      "messageId": 172,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/172"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
