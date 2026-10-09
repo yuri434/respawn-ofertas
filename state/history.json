@@ -1960,6 +1960,14 @@
       "messageId": 166,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/166"
+    },
+    "shopee:46916706072": {
+      "status": "enviando",
+      "at": "2026-10-09T14:05:18.053Z",
+      "text": "🎮 Smartphone Samsung Galaxy A36 5G 128GB — Verde\n\n💰 Valor: R$ 1.594,90\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/qk81F5kCE\n\nConferido em 09/10/2026, 11:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/qk81F5kCE",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
