@@ -990,12 +990,16 @@
       "url": "https://t.me/RespawnOfertasYuri/84"
     },
     "shopee:23594071007": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T05:05:17.668Z",
       "text": "🎮 Processador gamer Intel Core i3-4130 CM8064601483615 de 2 núcleos e 3.4GHz de frequência com gráfica integrada\n\n💰 Valor: R$ 39,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/8AWiN1Pznc\n\nConferido em 09/10/2026, 02:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/8AWiN1Pznc",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T05:05:17.668Z",
+      "messageId": 85,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/85"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
