@@ -2514,12 +2514,16 @@
       "url": "https://t.me/RespawnOfertasYuri/212"
     },
     "shopee:14112323077": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T20:40:22.214Z",
       "text": "🎮 Headset Fone Gamer Intra Auricular Com Microfone P3 Celular PC PS4 Xbox Free Fire PUBG COD\n\n💰 Valor: R$ 31,99\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/3LRSbRzlVe\n\nConferido em 09/10/2026, 17:40 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/3LRSbRzlVe",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T20:40:22.214Z",
+      "messageId": 213,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/213"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
