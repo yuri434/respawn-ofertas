@@ -2452,6 +2452,14 @@
       "messageId": 207,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/207"
+    },
+    "shopee:58254412182": {
+      "status": "enviando",
+      "at": "2026-10-09T19:45:33.297Z",
+      "text": "🎮 Cadeira Pc Gamer Giratória Ergonimica Em Couro Com Descanso Para os Pés Conforto\n\n💰 Valor: R$ 379,99\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/W7HKQIhMZ\n\nConferido em 09/10/2026, 16:45 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/W7HKQIhMZ",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
