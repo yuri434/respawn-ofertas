@@ -2046,12 +2046,16 @@
       "url": "https://t.me/RespawnOfertasYuri/173"
     },
     "shopee:22192883552": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T14:40:22.392Z",
       "text": "🎮 Cadeira Gamer Preta Ergonômica Reclinável Confortável Com Rodinha\n\n💰 Valor: R$ 390,79\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/4B0ZhA4jv7\n\nConferido em 09/10/2026, 11:40 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/4B0ZhA4jv7",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T14:40:22.392Z",
+      "messageId": 174,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/174"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
