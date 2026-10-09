@@ -1134,12 +1134,16 @@
       "url": "https://t.me/RespawnOfertasYuri/96"
     },
     "shopee:58203263616": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T06:05:18.884Z",
       "text": "🎮 Headset Gamer 7.1 Surround Rgb Delta-f7140 Com Microfone Para Pc E Console\n\n💰 Valor: R$ 54,78\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/gQhOq8fa9\n\nConferido em 09/10/2026, 03:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/gQhOq8fa9",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T06:05:18.884Z",
+      "messageId": 97,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/97"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
