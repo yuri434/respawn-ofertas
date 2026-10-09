@@ -1974,12 +1974,16 @@
       "url": "https://t.me/RespawnOfertasYuri/167"
     },
     "shopee:58260367297": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T14:10:24.233Z",
       "text": "🎮 Smartphone Samsung Galaxy A07 256GB\n\n💰 Valor: R$ 1.082,45\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/1gJF0m2ZVR\n\nConferido em 09/10/2026, 11:10 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/1gJF0m2ZVR",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T14:10:24.233Z",
+      "messageId": 168,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/168"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
