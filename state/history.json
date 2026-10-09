@@ -976,6 +976,14 @@
       "messageId": 83,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/83"
+    },
+    "shopee:52953470536": {
+      "status": "enviando",
+      "at": "2026-10-09T05:00:27.342Z",
+      "text": "🎮 Processador AMD Ryzen 7 5700, 3.7 GHz (4.6GHz Max Turbo), Cache 4MB, 8 Núcleos, 16 Threads, AM4\n\n💰 Valor: R$ 1.599,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/2gBm9BN4Vk\n\nConferido em 09/10/2026, 02:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/2gBm9BN4Vk",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
