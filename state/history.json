@@ -2082,12 +2082,16 @@
       "url": "https://t.me/RespawnOfertasYuri/176"
     },
     "shopee:22594291978": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T15:30:29.431Z",
       "text": "🎮 Gabinete Gamer Mancer Ward V3, Mini-Tower, Lateral de Vidro, Com 3 Fans, Preto, MCR-WD3-BK-3F\n\n💰 Valor: R$ 275,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/5At6mTjbOR\n\nConferido em 09/10/2026, 12:30 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/5At6mTjbOR",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T15:30:29.431Z",
+      "messageId": 177,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/177"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
