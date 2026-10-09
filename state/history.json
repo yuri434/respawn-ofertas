@@ -2308,6 +2308,14 @@
       "messageId": 195,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/195"
+    },
+    "shopee:58216929863": {
+      "status": "enviando",
+      "at": "2026-10-09T18:10:20.901Z",
+      "text": "🎮 Gabinete Gamer Rise Mode Prisma Glass 01 Mid Tower Vidro Temperado USB 3.0 S/ Fans Preto - RM-CA-PRS-01-FB\n\n💰 Valor: R$ 127,90\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/3VksnPpwmD\n\nConferido em 09/10/2026, 15:10 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/3VksnPpwmD",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
