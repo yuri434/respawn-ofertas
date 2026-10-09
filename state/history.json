@@ -378,12 +378,16 @@
       "url": "https://t.me/RespawnOfertasYuri/33"
     },
     "shopee:23698446246": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T00:45:23.138Z",
       "text": "🎮 Cooler Para Processador Mancer Hazel, Rainbow, 120mm, MCR-HZL-01\n\n💰 Valor: R$ 35,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/5q8nd8eY4m\n\nConferido em 08/10/2026, 21:45 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/5q8nd8eY4m",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T00:45:23.138Z",
+      "messageId": 34,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/34"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
