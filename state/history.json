@@ -1782,12 +1782,16 @@
       "url": "https://t.me/RespawnOfertasYuri/150"
     },
     "shopee:58213183417": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T11:05:20.730Z",
       "text": "🎮 Soundbar para PC Gamer Caixa De Som Potente Som Estéreo Com Fio USB P2 Pc Notebook USB FD009\n\n💰 Valor: R$ 39,98\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/2VsMLvq0GX\n\nConferido em 09/10/2026, 08:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/2VsMLvq0GX",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T11:05:20.730Z",
+      "messageId": 151,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/151"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
