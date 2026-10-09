@@ -1290,12 +1290,16 @@
       "url": "https://t.me/RespawnOfertasYuri/109"
     },
     "shopee:50005206105": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T07:10:20.386Z",
       "text": "🎮 Cpu Gamer Barato I5 6gb Ssd 120gb Wifi + Fonte + Gt 210 + Monitor 15\"\n\n💰 Valor: R$ 1.169,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/AUudESbhro\n\nConferido em 09/10/2026, 04:10 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/AUudESbhro",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T07:10:20.386Z",
+      "messageId": 110,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/110"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
