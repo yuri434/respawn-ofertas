@@ -1924,6 +1924,14 @@
       "messageId": 162,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/162"
+    },
+    "shopee:22598781244": {
+      "status": "enviando",
+      "at": "2026-10-09T12:20:20.977Z",
+      "text": "🎮 Gabinete Gamer Acegeek Stratus Mesh, Mid-Tower, Lateral de Vidro, Preto, AG-STRATUS-MESH-BK\n\n💰 Valor: R$ 104,20\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/4VdQ4OtbSA\n\nConferido em 09/10/2026, 09:20 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/4VdQ4OtbSA",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
