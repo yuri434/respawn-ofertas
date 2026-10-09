@@ -784,6 +784,14 @@
       "messageId": 67,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/67"
+    },
+    "shopee:57358236213": {
+      "status": "enviando",
+      "at": "2026-10-09T03:35:17.888Z",
+      "text": "🎮 Soundbar Gamer Para PC e Notebook Caixa de Som 6W RMS USB P2 ACS-4512\n\n💰 Valor: R$ 51,88\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/50ZgfJrhRD\n\nConferido em 09/10/2026, 00:35 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/50ZgfJrhRD",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
