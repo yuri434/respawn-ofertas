@@ -1722,12 +1722,16 @@
       "url": "https://t.me/RespawnOfertasYuri/145"
     },
     "shopee:45665862180": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T10:40:21.788Z",
       "text": "🎮 SMARTPHONE SAMSUNG GALAXY A17 128GB 4GB RAM 50MP TELA 6.7 IP54 PRETO\n\n💰 Valor: R$ 883,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/1B11i8ut1\n\nConferido em 09/10/2026, 07:40 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/1B11i8ut1",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T10:40:21.788Z",
+      "messageId": 146,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/146"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
