@@ -1254,12 +1254,16 @@
       "url": "https://t.me/RespawnOfertasYuri/106"
     },
     "shopee:58261918789": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T06:55:17.741Z",
       "text": "🎮 Dissipador de Calor Para SSD NVME e Vídeo Game com Thermal Pad\n\n💰 Valor: R$ 17,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/AKbCtuklqh\n\nConferido em 09/10/2026, 03:55 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/AKbCtuklqh",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T06:55:17.741Z",
+      "messageId": 107,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/107"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
