@@ -1528,6 +1528,14 @@
       "messageId": 129,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/129"
+    },
+    "shopee:22298496316": {
+      "status": "enviando",
+      "at": "2026-10-09T08:55:17.506Z",
+      "text": "🎮 Cadeira Escritório Giratória Viena Ergonômica Tela Mesh Base Cromada 100kg Conforto Home Office Gamer Trabalho Estudos\n\n💰 Valor: R$ 148,99\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/3g4J6F6dvy\n\nConferido em 09/10/2026, 05:55 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/3g4J6F6dvy",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
