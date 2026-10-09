@@ -414,12 +414,16 @@
       "url": "https://t.me/RespawnOfertasYuri/36"
     },
     "shopee:58261411805": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-09T01:00:29.940Z",
       "text": "🎮 Smartphone Xiaomi POCO C85 com Android 15, 256GB/128GB Versão Global Envio Imediato\n\n💰 Valor: R$ 1.055,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/80DIEVJlXj\n\nConferido em 08/10/2026, 22:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/80DIEVJlXj",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-09T01:00:29.940Z",
+      "messageId": 37,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/37"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
