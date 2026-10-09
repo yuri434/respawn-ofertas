@@ -1504,6 +1504,14 @@
       "messageId": 127,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/127"
+    },
+    "shopee:22292960344": {
+      "status": "enviando",
+      "at": "2026-10-09T08:45:23.401Z",
+      "text": "🎮 Monitor Gamer Curvo 27'' CZ270F Concórdia 100HZ LED FULL HD HDMI VGA SRGB 99%\n\n💰 Valor: R$ 714,24\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/8AWiSAkabC\n\nConferido em 09/10/2026, 05:45 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/8AWiSAkabC",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
