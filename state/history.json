@@ -2560,6 +2560,14 @@
       "messageId": 216,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/216"
+    },
+    "shopee:49215381669": {
+      "status": "enviando",
+      "at": "2026-10-09T21:05:17.862Z",
+      "text": "🎮 Processador Amd Ryzen 3 3200G Am4 3.6Ghz (4.0Ghz Turbo) Cache 4Mb 4 Nucleos 4 Threads 65W | YD3200C5FHBOX\n\n💰 Valor: R$ 459,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/5LCXozMAw7\n\nConferido em 09/10/2026, 18:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/5LCXozMAw7",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
