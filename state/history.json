@@ -2812,6 +2812,14 @@
       "messageId": 237,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/237"
+    },
+    "shopee:22592875862": {
+      "status": "enviando",
+      "at": "2026-10-10T11:00:31.311Z",
+      "text": "🎮 Computador Gamer I7 8gb Ssd 240gb + Wifi + GT 210 Nvidia\n\n💰 Valor: R$ 1.424,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/5q8pucUAFx\n\nConferido em 10/10/2026, 08:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/5q8pucUAFx",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
