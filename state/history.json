@@ -2802,12 +2802,16 @@
       "url": "https://t.me/RespawnOfertasYuri/236"
     },
     "shopee:19203163869": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-10T10:45:22.568Z",
       "text": "🎮 Water Cooler Fan Duplo Rgb 240mm Para Processador Amd E Intel LGA2011/1155/1150/1156 AM3+/AM4\n\n💰 Valor: R$ 193,90\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/5LCZIewOPk\n\nConferido em 10/10/2026, 07:45 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/5LCZIewOPk",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-10T10:45:22.568Z",
+      "messageId": 237,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/237"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
