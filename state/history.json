@@ -2908,6 +2908,14 @@
       "messageId": 245,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/245"
+    },
+    "shopee:58215575965": {
+      "status": "enviando",
+      "at": "2026-10-10T14:40:21.584Z",
+      "text": "🎮 Caixa de Som Gamer para PC Soundbar 6W RMS USB P2 Estéreo RGB Controle de Volume no Cabo\n\n💰 Valor: R$ 39,90\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/7faUL5EfPk\n\nConferido em 10/10/2026, 11:40 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/7faUL5EfPk",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
