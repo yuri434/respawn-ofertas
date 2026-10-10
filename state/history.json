@@ -2920,6 +2920,14 @@
       "messageId": 246,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/246"
+    },
+    "shopee:58252876974": {
+      "status": "enviando",
+      "at": "2026-10-10T14:45:24.515Z",
+      "text": "🎮 Headset Headphone Fone de ouvido gamer com microfone para PS4 console de jogos\n\n💰 Valor: R$ 46,42\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/6L55i5hmLq\n\nConferido em 10/10/2026, 11:45 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/6L55i5hmLq",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
