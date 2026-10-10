@@ -2766,12 +2766,16 @@
       "url": "https://t.me/RespawnOfertasYuri/233"
     },
     "shopee:21698329997": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-10T03:00:30.027Z",
       "text": "🎮 Smartphone Xiaomi Redmi 15 4G 6GB 8GB 128GB 256GB Tela 6,9\" 144Hz,  Preto Cinza Roxo 7.000 mAh\n\n💰 Valor: R$ 1.415,90\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/W7J1qvmz2\n\nConferido em 10/10/2026, 00:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/W7J1qvmz2",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-10T03:00:30.027Z",
+      "messageId": 234,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/234"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
