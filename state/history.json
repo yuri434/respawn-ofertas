@@ -2994,12 +2994,16 @@
       "url": "https://t.me/RespawnOfertasYuri/252"
     },
     "shopee:22099485016": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-10T15:55:16.185Z",
       "text": "🎮 Smartphone Motorola Moto G15 256GB, 4G LTE, 12GB RAM Boost*, Camera 50MP, Tela FHD+ 6.7\" - Verde\n\n💰 Valor: R$ 999,90\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/70KncfSxMQ\n\nConferido em 10/10/2026, 12:55 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/70KncfSxMQ",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-10T15:55:16.185Z",
+      "messageId": 253,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/253"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
