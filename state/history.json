@@ -3016,6 +3016,14 @@
       "messageId": 254,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/254"
+    },
+    "shopee:58256326418": {
+      "status": "enviando",
+      "at": "2026-10-10T18:35:18.813Z",
+      "text": "🎮 Smartphone Motorola Edge 70 5G - 256GB 8GB RAM + 16GB RAM Boost, Ultrafino, 3 cameras 50MP, Tela 1.5K Amoled 120hz\n\n💰 Valor: R$ 3.665,56\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/AAHpZoWVjd\n\nConferido em 10/10/2026, 15:35 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/AAHpZoWVjd",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
