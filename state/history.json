@@ -2970,12 +2970,16 @@
       "url": "https://t.me/RespawnOfertasYuri/250"
     },
     "shopee:58217052865": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-10T15:40:19.901Z",
       "text": "🎮 Teclado Sem Fio Gamer Magnético Rapid Trigger 0,01mm 8000hz Rgb Fire Phoenix\n\n💰 Valor: R$ 252,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/6L56okmeuy\n\nConferido em 10/10/2026, 12:40 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/6L56okmeuy",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-10T15:40:19.901Z",
+      "messageId": 251,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/251"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
