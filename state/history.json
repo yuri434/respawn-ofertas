@@ -2718,12 +2718,16 @@
       "url": "https://t.me/RespawnOfertasYuri/229"
     },
     "shopee:18098391556": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-10T00:25:51.070Z",
       "text": "🎮 Smartphone Xiaomi POCO C85 4G, NFC Tela LCD 6.9\", Câmera 50MP, Versão Global Original Lacrado\n\n💰 Valor: R$ 1.269,90\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/113XtdkPkY\n\nConferido em 09/10/2026, 21:25 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/113XtdkPkY",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-10T00:25:51.070Z",
+      "messageId": 230,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/230"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
