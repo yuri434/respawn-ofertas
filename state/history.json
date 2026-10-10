@@ -2884,6 +2884,14 @@
       "messageId": 243,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/243"
+    },
+    "shopee:45610222947": {
+      "status": "enviando",
+      "at": "2026-10-10T13:45:20.508Z",
+      "text": "🎮 Cadeira Gamer 2 em 1 para Escritório, Ergonômica, Encosto Ajustável, com Rodinhas e Apoio para Pés\n\n💰 Valor: R$ 384,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/8KqB4X5STj\n\nConferido em 10/10/2026, 10:45 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/8KqB4X5STj",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
