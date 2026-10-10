@@ -2874,12 +2874,16 @@
       "url": "https://t.me/RespawnOfertasYuri/242"
     },
     "shopee:19698315816": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-10T12:55:17.848Z",
       "text": "🎮 Teclado Mecânico AITEK Delta TM6101 60% RGB Switch Vermelho USB Com Fio ABNT2 61 Teclas\n\n💰 Valor: R$ 119,98\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/qkA5JRelM\n\nConferido em 10/10/2026, 09:55 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/qkA5JRelM",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-10T12:55:17.848Z",
+      "messageId": 243,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/243"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
