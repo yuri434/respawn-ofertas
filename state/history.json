@@ -2742,12 +2742,16 @@
       "url": "https://t.me/RespawnOfertasYuri/231"
     },
     "shopee:51352143628": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-10T00:35:17.916Z",
       "text": "🎮 Smartphone Xiaomi POCO C85 – 6GB RAM, 128GB, Tela 6.9\", Dual LTE, Super Desempenho\n\n💰 Valor: R$ 1.072,72\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/7VH2T5PJTg\n\nConferido em 09/10/2026, 21:35 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/7VH2T5PJTg",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-10T00:35:17.916Z",
+      "messageId": 232,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/232"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
