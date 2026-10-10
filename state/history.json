@@ -3006,12 +3006,16 @@
       "url": "https://t.me/RespawnOfertasYuri/253"
     },
     "shopee:22797560966": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-10T17:05:18.744Z",
       "text": "🎮 kit Upgrade Gamer Intel i5-3470 + Cooler + Placa Mãe 1155\n\n💰 Valor: R$ 279,90\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/3VkvXNnbfC\n\nConferido em 10/10/2026, 14:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/3VkvXNnbfC",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-10T17:05:18.744Z",
+      "messageId": 254,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/254"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
