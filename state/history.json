@@ -2980,6 +2980,14 @@
       "messageId": 251,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/251"
+    },
+    "shopee:55863080429": {
+      "status": "enviando",
+      "at": "2026-10-10T15:50:21.432Z",
+      "text": "🎮 Smartphone Motorola Moto G35 5G 256GB 12GB (4GB+ 8GB RAM Boost*) NFC Câmera 50MP com AI - Coral\n\n💰 Valor: R$ 1.349,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/6VOX1kUrNH\n\nConferido em 10/10/2026, 12:50 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/6VOX1kUrNH",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
