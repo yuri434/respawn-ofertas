@@ -3078,12 +3078,16 @@
       "url": "https://t.me/RespawnOfertasYuri/259"
     },
     "shopee:23394484693": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-10T23:40:20.762Z",
       "text": "🎮 Smartphone Xiaomi Redmi 15 256gb/128gb Versão Global Original Envio IMEDIATO\n\n💰 Valor: R$ 1.249,90\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/8V9bvhSpHe\n\nConferido em 10/10/2026, 20:40 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/8V9bvhSpHe",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-10T23:40:20.762Z",
+      "messageId": 260,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/260"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
