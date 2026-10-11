@@ -3114,12 +3114,16 @@
       "url": "https://t.me/RespawnOfertasYuri/262"
     },
     "shopee:43161776816": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-11T02:05:18.352Z",
       "text": "🎮 Smartphone Samsung Galaxy A36 5G 128GB 6GB 6,7\"\n\n💰 Valor: R$ 1.609,00\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/9pezg6cMN2\n\nConferido em 10/10/2026, 23:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/9pezg6cMN2",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-11T02:05:18.352Z",
+      "messageId": 263,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/263"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
