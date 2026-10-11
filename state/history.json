@@ -3280,6 +3280,14 @@
       "messageId": 276,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/276"
+    },
+    "shopee:43476175738": {
+      "status": "enviando",
+      "at": "2026-10-11T17:50:19.573Z",
+      "text": "🎮 Celular Smartphone Samsung Galaxy A17 5G 128GB 4GB 50MP Tela 6.7\" - Preto\n\n💰 Valor: R$ 1.610,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/9zyQvJDsLN\n\nConferido em 11/10/2026, 14:50 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/9zyQvJDsLN",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
