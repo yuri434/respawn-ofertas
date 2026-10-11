@@ -3174,12 +3174,16 @@
       "url": "https://t.me/RespawnOfertasYuri/267"
     },
     "shopee:20998666875": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-11T14:45:21.066Z",
       "text": "🎮 Mouse Gamer Iluminado Led RGB 7 Botões Para Jogos 3200 Dpi\n\n💰 Valor: R$ 29,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/9V271kFFwd\n\nConferido em 11/10/2026, 11:45 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/9V271kFFwd",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-11T14:45:21.066Z",
+      "messageId": 268,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/268"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
