@@ -3100,6 +3100,14 @@
       "messageId": 261,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/261"
+    },
+    "shopee:23497445091": {
+      "status": "enviando",
+      "at": "2026-10-11T00:30:29.472Z",
+      "text": "🎮 Controle De Xbox 360 ou Play Com Fio Usb Para Video Game e PC/ Fat E Pc Joystick Jogo\n\n💰 Valor: R$ 28,99\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/2qVFEjGgOQ\n\nConferido em 10/10/2026, 21:30 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/2qVFEjGgOQ",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
