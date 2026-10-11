@@ -3246,12 +3246,16 @@
       "url": "https://t.me/RespawnOfertasYuri/273"
     },
     "shopee:20399835223": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-11T17:00:29.176Z",
       "text": "🎮 Processador Intel Core i5 3470 3.60GHz – 3ª Geração com 4 Núcleos de Alto Desempenho\n\n💰 Valor: R$ 131,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/4B0dvATOUG\n\nConferido em 11/10/2026, 14:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/4B0dvATOUG",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-11T17:00:29.176Z",
+      "messageId": 274,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/274"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
