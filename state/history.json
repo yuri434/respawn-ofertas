@@ -3340,6 +3340,14 @@
       "messageId": 281,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/281"
+    },
+    "shopee:23098539018": {
+      "status": "enviando",
+      "at": "2026-10-11T19:10:22.497Z",
+      "text": "🎮 Hub USB 2.0 KNUP 7 Portas Com Fonte Bivolt Extensor USB Para Notebook Computador 480Mbps\n\n💰 Valor: R$ 33,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/1B56QfrMq\n\nConferido em 11/10/2026, 16:10 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/1B56QfrMq",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
