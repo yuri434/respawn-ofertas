@@ -3414,12 +3414,16 @@
       "url": "https://t.me/RespawnOfertasYuri/287"
     },
     "shopee:58260324103": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-11T22:45:20.708Z",
       "text": "🎮 Kit Pinos e Travas para Fixação do Air Cooler para Processador Intel Lga 115x na Placa Mãe\n\n💰 Valor: R$ 16,99\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/7ptwfaXvuR\n\nConferido em 11/10/2026, 19:45 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/7ptwfaXvuR",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-11T22:45:20.708Z",
+      "messageId": 288,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/288"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
