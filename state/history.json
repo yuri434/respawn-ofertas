@@ -3138,12 +3138,16 @@
       "url": "https://t.me/RespawnOfertasYuri/264"
     },
     "shopee:58254539071": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-11T12:00:33.963Z",
       "text": "🎮 Placa de Video INNO3D GeForce RTX 5050 Twin X2, 8GB, GDDR6, 128-bit, N50502-08D6-174071N\n\n💰 Valor: R$ 2.443,87\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/9fLa8g58Hc\n\nConferido em 11/10/2026, 09:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/9fLa8g58Hc",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-11T12:00:33.963Z",
+      "messageId": 265,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/265"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
