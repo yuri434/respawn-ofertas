@@ -3198,12 +3198,16 @@
       "url": "https://t.me/RespawnOfertasYuri/269"
     },
     "shopee:58218894380": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-11T15:10:24.116Z",
       "text": "🎮 Smartphone Motorola Moto G77 5G 256GB (8GB RAM + 16GB RAM Boost) Câmera Traseira 108MP + 8MP Selfie 32MP 6.8\" -  Marrom\n\n💰 Valor: R$ 1.659,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/1LgSQ39GE7\n\nConferido em 11/10/2026, 12:10 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/1LgSQ39GE7",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-11T15:10:24.116Z",
+      "messageId": 270,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/270"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
