@@ -3520,6 +3520,14 @@
       "messageId": 296,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/296"
+    },
+    "shopee:47765619075": {
+      "status": "enviando",
+      "at": "2026-10-12T16:15:24.147Z",
+      "text": "🎮 YA * 1 Conjunto Dissipador Calor, Radiador, Refrigerador Para DDR2 DDR3 DDR4, Memória Mesa, Almofada Dis\n\n💰 Valor: R$ 15,05\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/9pf22jiNLd\n\nConferido em 12/10/2026, 13:15 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/9pf22jiNLd",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
