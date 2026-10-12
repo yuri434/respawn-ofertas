@@ -3508,6 +3508,14 @@
       "messageId": 295,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/295"
+    },
+    "shopee:58211871801": {
+      "status": "enviando",
+      "at": "2026-10-12T15:50:24.483Z",
+      "text": "🎮 Fones de ouvido Headset Gamer com fio com microfone USB e P2 para PC computador headset videogames\n\n💰 Valor: R$ 46,55\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/BUVe1eF6z\n\nConferido em 12/10/2026, 12:50 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/BUVe1eF6z",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
