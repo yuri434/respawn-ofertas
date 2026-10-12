@@ -3498,12 +3498,16 @@
       "url": "https://t.me/RespawnOfertasYuri/294"
     },
     "shopee:58211871574": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-12T15:35:24.530Z",
       "text": "🎮 Headset Gamer LED com Microfone para PC PS3 PS4 PS5 Xbox One Kapbom/ALTOMEX Original\n\n💰 Valor: R$ 39,49\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/4B0eVDAi0m\n\nConferido em 12/10/2026, 12:35 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/4B0eVDAi0m",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-12T15:35:24.530Z",
+      "messageId": 295,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/295"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
