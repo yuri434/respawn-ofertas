@@ -3570,12 +3570,16 @@
       "url": "https://t.me/RespawnOfertasYuri/300"
     },
     "shopee:25645909731": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-12T19:00:28.012Z",
       "text": "🎮 Placa de Video GeForce NVIDIA MSI  RTX5060TI 8g Shadow 2x Oc Plus 8gb Gddr7 128 Bits - 912-V536-023\n\n💰 Valor: R$ 3.499,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/AAHsnK79lr\n\nConferido em 12/10/2026, 16:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/AAHsnK79lr",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-12T19:00:28.012Z",
+      "messageId": 301,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/301"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
