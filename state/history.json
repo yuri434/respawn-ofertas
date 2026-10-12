@@ -3460,6 +3460,14 @@
       "messageId": 291,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/291"
+    },
+    "shopee:22591649689": {
+      "status": "enviando",
+      "at": "2026-10-12T14:00:32.590Z",
+      "text": "🎮 Mouse Gamer iluminação RGB design ergonômico confortável 4800 DPI\n\n💰 Valor: R$ 32,96\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/3g4OimX72K\n\nConferido em 12/10/2026, 11:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/3g4OimX72K",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
