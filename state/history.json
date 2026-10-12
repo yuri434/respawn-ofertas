@@ -3558,12 +3558,16 @@
       "url": "https://t.me/RespawnOfertasYuri/299"
     },
     "shopee:58263647726": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-12T17:05:23.122Z",
       "text": "🎮 Smartphone Celular Xiaomi 17T 5G 256GB ou 512GB 12GB Ram NFC Camera Leica Versão Global  Lacrado Pronta Entrega\n\n💰 Valor: R$ 4.799,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/7VH5ljYZBz\n\nConferido em 12/10/2026, 14:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/7VH5ljYZBz",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-12T17:05:23.122Z",
+      "messageId": 300,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/300"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
