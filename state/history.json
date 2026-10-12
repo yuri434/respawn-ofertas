@@ -3582,12 +3582,16 @@
       "url": "https://t.me/RespawnOfertasYuri/301"
     },
     "shopee:19299198797": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-12T20:00:31.402Z",
       "text": "🎮 Cadeira Gamer Escritório Ergonômica Reclinável Em Couro Confortável Com Apoio Para Pés\n\n💰 Valor: R$ 390,79\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/3B88WaIWfN\n\nConferido em 12/10/2026, 17:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/3B88WaIWfN",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-12T20:00:31.402Z",
+      "messageId": 302,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/302"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
