@@ -3534,12 +3534,16 @@
       "url": "https://t.me/RespawnOfertasYuri/297"
     },
     "shopee:58215217850": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-12T16:25:20.304Z",
       "text": "🎮 Mouse Vertical Ergonômico Sem Fio Recarregável USB Bluetooth Silencioso Ortopédico Mão Direita PC Gamer Super\n\n💰 Valor: R$ 36,98\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/AUuhzPgFFu\n\nConferido em 12/10/2026, 13:25 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/AUuhzPgFFu",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-12T16:25:20.304Z",
+      "messageId": 298,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/298"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
