@@ -3474,12 +3474,16 @@
       "url": "https://t.me/RespawnOfertasYuri/292"
     },
     "shopee:58267735621": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-12T14:20:21.632Z",
       "text": "🎮 Smartphone Motorola Moto G Max 5G 256GB 8GB RAM Câmera Principal 200MP + 8MP Câmera Frontal 32MP 6.8\" 5200mAh Grafite\n\n💰 Valor: R$ 1.919,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/4LK5XMrhVb\n\nConferido em 12/10/2026, 11:20 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/4LK5XMrhVb",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-12T14:20:21.632Z",
+      "messageId": 293,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/293"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
