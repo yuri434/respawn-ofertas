@@ -3450,12 +3450,16 @@
       "url": "https://t.me/RespawnOfertasYuri/290"
     },
     "shopee:48950769608": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-12T02:05:20.476Z",
       "text": "🎮 Monitor Gamer AOC AGON G50 27\" 144Hz 0,5ms IPS HDR10 G-SYNC 27G50F\n\n💰 Valor: R$ 919,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/50ZlW7400g\n\nConferido em 11/10/2026, 23:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/50ZlW7400g",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-12T02:05:20.476Z",
+      "messageId": 291,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/291"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
