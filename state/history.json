@@ -3678,12 +3678,16 @@
       "url": "https://t.me/RespawnOfertasYuri/309"
     },
     "shopee:20999379396": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-13T14:55:19.994Z",
       "text": "🎮 Gamer Computador I5 8gb Ssd 240gb Wifi + Fonte + Gt 210 + Monitor 15\"\n\n💰 Valor: R$ 1.380,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/9pf3ild0go\n\nConferido em 13/10/2026, 11:55 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/9pf3ild0go",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-13T14:55:19.994Z",
+      "messageId": 310,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/310"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
