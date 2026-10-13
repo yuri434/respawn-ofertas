@@ -3702,12 +3702,16 @@
       "url": "https://t.me/RespawnOfertasYuri/311"
     },
     "shopee:58216251722": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-13T15:05:25.188Z",
       "text": "🎮 Headset Gamer Camuflado Com Fio Estéreo Microfone USB P2 50mm Para PC PS4 Xbox-Onistek\n\n💰 Valor: R$ 69,98\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/3qNqaR051D\n\nConferido em 13/10/2026, 12:05 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/3qNqaR051D",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-13T15:05:25.188Z",
+      "messageId": 312,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/312"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
