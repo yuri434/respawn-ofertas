@@ -3630,12 +3630,16 @@
       "url": "https://t.me/RespawnOfertasYuri/305"
     },
     "shopee:19299907859": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-13T05:00:31.113Z",
       "text": "🎮 Fone De Ouvido Headset Gamer 7.1 Com Microfone Profissional Preto Led Rgb PC USB P2/P3 XBOX PS4\n\n💰 Valor: R$ 61,90\nPreço mínimo informado pela API Shopee; varia conforme a opção. Confira o modelo, frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/5q8uIZGq1V\n\nConferido em 13/10/2026, 02:00 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/5q8uIZGq1V",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-13T05:00:31.113Z",
+      "messageId": 306,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/306"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
