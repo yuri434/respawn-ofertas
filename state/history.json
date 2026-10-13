@@ -3736,6 +3736,14 @@
       "messageId": 314,
       "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
       "url": "https://t.me/RespawnOfertasYuri/314"
+    },
+    "shopee:23395179835": {
+      "status": "enviando",
+      "at": "2026-10-13T20:45:23.588Z",
+      "text": "🎮 Memória Gbt 8gb Ddr5 5600mhz - Gbt5600d5/8\n\n💰 Valor: R$ 951,11\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/6VOZDj3xJN\n\nConferido em 13/10/2026, 17:45 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
+      "link": "https://s.shopee.com.br/6VOZDj3xJN",
+      "channelId": -1003910154291,
+      "format": "photo"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
