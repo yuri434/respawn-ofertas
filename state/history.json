@@ -3714,12 +3714,16 @@
       "url": "https://t.me/RespawnOfertasYuri/312"
     },
     "shopee:22897502871": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-13T18:30:28.896Z",
       "text": "🎮 Mousepad Gamer TGT K50M, Grande, 500x500x3mm, Preto, TGT-K50M-GRB01\n\n💰 Valor: R$ 39,90\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/6VObzPtex7\n\nConferido em 13/10/2026, 15:30 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/6VObzPtex7",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-13T18:30:28.896Z",
+      "messageId": 313,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/313"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
