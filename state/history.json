@@ -3642,12 +3642,16 @@
       "url": "https://t.me/RespawnOfertasYuri/306"
     },
     "shopee:22994809228": {
-      "status": "enviando",
+      "status": "publicado",
       "at": "2026-10-13T10:40:24.805Z",
       "text": "🎮 Memória RAM ADATA 8GB DDR5 5600MHz CL46 1,1V SODIMM para Notebook e Laptop, Módulo para Upgrade de Desempenho\n\n💰 Valor: R$ 999,00\nPreço informado pela API Shopee. Confira frete e preço final no anúncio.\n\n👉 Abrir oferta — PC/celular: https://s.shopee.com.br/gQoWPjt6B\n\nConferido em 13/10/2026, 07:40 (São Paulo). Preço e disponibilidade podem mudar.\n\nPublicidade | Link de afiliado: posso receber comissão pelas compras feitas por este link.",
       "link": "https://s.shopee.com.br/gQoWPjt6B",
       "channelId": -1003910154291,
-      "format": "photo"
+      "format": "photo",
+      "confirmedAt": "2026-10-13T10:40:24.805Z",
+      "messageId": 307,
+      "evidence": "Telegram Bot API retornou a mensagem enviada ao canal correto.",
+      "url": "https://t.me/RespawnOfertasYuri/307"
     }
   },
   "note": "Histórico exclusivo do Telegram. Primeira publicação confirmada em 05/10/2026; histórico de WhatsApp separado e sua automação pausada."
